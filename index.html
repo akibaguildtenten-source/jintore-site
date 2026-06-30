@@ -167,6 +167,7 @@ header.site{
 .notice-date{font-family:var(--mono);font-size:12.5px;color:var(--sumi-soft);letter-spacing:.06em}
 .notice h3{font-family:var(--disp);font-weight:900;font-size:clamp(17px,2.6vw,21px);line-height:1.5;margin:0 0 10px}
 .notice p{font-size:14.5px;line-height:1.9;color:var(--sumi-soft);margin:0}
+.notice-img{max-width:100%;border-radius:6px;margin-top:12px;border:1px solid var(--line)}
 .notice .buy{margin-top:14px}
 
 /* ============================================================
@@ -419,11 +420,10 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
   </div>
 </footer>
 
-<script src="content.js"></script>
 <script>
-/* コンテンツ（お知らせ・動画・書籍・最新情報など）は content.js にあります。
-   編集は admin.html を開いて行い、書き出した content.js を差し替えてください。 */
-const DATA = window.SITE_CONTENT || {};
+/* 中身（お知らせ・動画・書籍など）は content.json にあります（編集は /admin のCMS）。 */
+function boot(DATA){
+DATA = DATA || {};
 
 /* ============================================================================
    ▲▲▲ 書き換えるのはここまで。以下は表示の仕組みです ▲▲▲
@@ -445,10 +445,12 @@ $("#yr").textContent = new Date().getFullYear();
 $("#noticeList").innerHTML = DATA.announcements.map(n=>{
   const link = n.link ? `<a class="buy" href="${esc(n.link.url)}" target="_blank" rel="noopener">${esc(n.link.label)} →</a>` : "";
   const date = n.date ? `<span class="notice-date">${esc(n.date)}</span>` : "";
+  const img = n.image ? `<img class="notice-img" src="${esc(n.image)}" alt="">` : "";
   return `<article class="notice${n.important?" important":""}">
     <div class="notice-head"><span class="notice-tag">${esc(n.tag)}</span>${date}</div>
     <h3>${esc(n.title)}</h3>
     <p>${esc(n.body)}</p>
+    ${img}
     ${link}
   </article>`;
 }).join("");
@@ -530,6 +532,8 @@ $("#snsRow").innerHTML = DATA.sns.map(s=>`
 const menuBtn=$("#menuBtn"), navLinks=$("#navLinks");
 menuBtn.addEventListener("click", ()=> navLinks.classList.toggle("open"));
 navLinks.addEventListener("click", e=>{ if(e.target.tagName==="A") navLinks.classList.remove("open"); });
+}
+fetch("content.json",{cache:"no-store"}).then(r=>r.json()).then(boot).catch(e=>{console.error("content.json 読込失敗",e);});
 </script>
 </body>
 </html>
