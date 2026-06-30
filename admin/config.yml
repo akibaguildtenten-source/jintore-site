@@ -1,10 +1,20 @@
-# Use DecapBridge classic auth (required)
+# Use DecapBridge PKCE auth (required)
 backend:
   name: git-gateway
   repo: akibaguildtenten-source/jintore-site
   branch: main
-  identity_url: https://auth.decapbridge.com/sites/3316a7d2-7aaf-49ad-a69a-d8e699715cd3
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/3316a7d2-7aaf-49ad-a69a-d8e699715cd3/pkce
+  auth_token_endpoint: /sites/3316a7d2-7aaf-49ad-a69a-d8e699715cd3/token
   gateway_url: https://gateway.decapbridge.com
+
+# Enable PKCE fields (optional, recommended)
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
 
 # 画像のアップロード先（CMSから入れた画像はここに保存されます）
 media_folder: "images"
