@@ -186,10 +186,9 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
   </div>
 </footer>
 
-<script src="content.js"></script>
 <script>
-/* お知らせ（体験会・勉強会・更新）── 足す時は先頭に1行追加 */
-const NEWS = (window.SITE_CONTENT && window.SITE_CONTENT.taikenNews) || [];
+function boot(DATA){
+const NEWS = (DATA && DATA.taikenNews) || [];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 document.getElementById("newsList").innerHTML = NEWS.map(n=>`
   <li><a class="news-item" href="${esc(n.url)}" target="_blank" rel="noopener">
@@ -231,6 +230,8 @@ $f("formSubmit").addEventListener("click", async ()=>{
     showMsg("送信に失敗しました。お手数ですが時間をおいて再度お試しください。", false);
   }finally{ btn.disabled=false; }
 });
+}
+fetch("content.json",{cache:"no-store"}).then(r=>r.json()).then(boot).catch(e=>{console.error("content.json 読込失敗",e);});
 </script>
 </body>
 </html>
