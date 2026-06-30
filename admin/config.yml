@@ -1,9 +1,9 @@
+# Use DecapBridge classic auth (required)
 backend:
   name: git-gateway
+  repo: akibaguildtenten-source/jintore-site
   branch: main
-  # ▼ ログイン設定（DecapBridge）でこのリポジトリを連携すると、
-  #   下の2つのURLが発行されます。発行された値に置き換えてください。
-  identity_url: https://auth.decapbridge.com/sites/＜あなたのサイトID＞
+  identity_url: https://auth.decapbridge.com/sites/3316a7d2-7aaf-49ad-a69a-d8e699715cd3
   gateway_url: https://gateway.decapbridge.com
 
 # 画像のアップロード先（CMSから入れた画像はここに保存されます）
