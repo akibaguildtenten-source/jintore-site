@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>体験したい方へ | 靭トレ協会</title>
+<meta name="description" content="靭トレを体験したい方へ。体験会・勉強会のご案内、ご予約・お問い合わせ（公式LINE・メール）はこちらから。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff;--paper-2:#f1f5f9;--paper-3:#f8fafc;
+  --sumi:#141414;--sumi-soft:#54606b;--line:#e2e8ef;
+  --shu:#1f5c9e;--shu-deep:#143f6e;--maxw:1080px;
+  --disp:"Noto Sans JP",sans-serif;--body:"Noto Sans JP",sans-serif;--mono:"Roboto Mono",monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--sumi);font-family:var(--body);line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.26em;color:var(--shu);font-weight:700;margin:0 0 10px}
+.sec-title{font-family:var(--disp);font-weight:900;font-size:clamp(24px,4vw,34px);margin:0 0 24px;letter-spacing:.02em;line-height:1.3}
+section{padding:64px 0}
+.bg-alt{background:var(--paper-3)}
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{font-family:var(--disp);font-weight:700;font-size:21px;letter-spacing:.12em;text-decoration:none}
+.brand .dot{color:var(--shu)}
+.nav-links{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--sumi-soft);transition:color .2s}
+.nav-links a:hover{color:var(--shu)}
+.nav-cta{display:inline-block;background:var(--shu);color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:9px 16px;border-radius:2px;transition:background .2s}
+.nav-cta:hover{background:var(--shu-deep)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:2px;padding:7px 10px;font-size:13px;cursor:pointer;color:var(--sumi)}
+.page-hero{background:var(--paper);border-bottom:1px solid var(--line);padding:60px 0 40px}
+.page-hero h1{font-family:var(--disp);font-weight:900;font-size:clamp(30px,5.5vw,50px);margin:0;letter-spacing:.02em}
+.page-hero .lead{font-size:16px;color:var(--sumi-soft);max-width:36em;margin:16px 0 0}
+.crumb{font-family:var(--mono);font-size:12px;color:var(--sumi-soft);margin:0 0 16px;letter-spacing:.06em}
+.crumb a{text-decoration:none;color:var(--shu)}
+/* contact card */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.contact-cta{background:var(--sumi);color:var(--paper);border-radius:6px;padding:32px 30px}
+.contact-cta h3{font-family:var(--disp);font-size:22px;margin:0 0 8px;font-weight:900}
+.contact-cta p{font-size:14px;color:#c2ccd4;margin:0 0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;padding:14px 26px;border-radius:2px;transition:.2s;width:100%}
+.btn-line{background:#06c755;color:#fff}.btn-line:hover{background:#05a648}
+.line-ico{width:16px;height:16px;flex:none}
+/* form */
+.form-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:30px 28px;max-width:620px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13.5px;font-weight:700;margin-bottom:6px}
+.field label .req{color:#c0392b;font-size:11px;margin-left:6px}
+.field input,.field textarea{width:100%;font-family:inherit;font-size:15px;color:var(--sumi);background:var(--paper-3);border:1px solid var(--line);border-radius:5px;padding:12px 14px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--shu);background:#fff}
+.field textarea{min-height:120px;resize:vertical}
+.form-note{font-size:12.5px;color:var(--sumi-soft);margin:0 0 20px}
+.form-submit{background:var(--shu);color:#fff;border:0;font-family:inherit;font-weight:700;font-size:15px;padding:14px 30px;border-radius:3px;cursor:pointer;transition:.2s}
+.form-submit:hover{background:var(--shu-deep)}
+.form-submit:disabled{opacity:.5;cursor:default}
+.form-msg{margin-top:16px;font-size:14px;font-weight:700;display:none}
+.form-msg.ok{display:block;color:#1f7a3d}
+.form-msg.ng{display:block;color:#c0392b}
+.btn-ghost-d{border:1px solid #6b7681;color:var(--paper);margin-top:10px}.btn-ghost-d:hover{background:#fff;color:var(--sumi)}
+.info dl{margin:0}
+.info dt{font-size:12px;letter-spacing:.18em;color:var(--shu);font-weight:700;margin-top:18px;font-family:var(--mono)}
+.info dt:first-child{margin-top:0}
+.info dd{margin:4px 0 0;font-size:16px}
+.info dd a{color:var(--shu);text-decoration:none}
+.info dd a:hover{text-decoration:underline}
+/* news list */
+.news-list{list-style:none;margin:0;padding:0}
+.news-item{display:block;text-decoration:none;padding:18px 0;border-bottom:1px solid var(--line);transition:.2s}
+.news-item:hover{padding-left:8px}
+.news-item .date{font-family:var(--mono);font-size:12.5px;color:var(--shu);font-weight:700;letter-spacing:.06em}
+.news-item .title{font-family:var(--disp);font-weight:700;font-size:clamp(15px,2.2vw,17px);line-height:1.55;margin-top:4px}
+.pin{display:inline-block;font-family:var(--mono);font-size:10.5px;font-weight:700;letter-spacing:.1em;color:#fff;background:var(--shu);border-radius:2px;padding:2px 8px;margin-bottom:8px}
+footer.site{background:var(--sumi);color:#9aa4ad;padding:36px 0;text-align:center;font-size:13px}
+footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;display:inline-block;margin-bottom:10px}
+@media(max-width:760px){
+  section{padding:48px 0}
+  .contact{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .menu-btn{display:inline-block}
+  .nav-links.open{display:flex;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--paper-3);border-bottom:1px solid var(--line);gap:0;padding:8px 24px}
+  .nav-links.open a{padding:13px 0;border-bottom:1px solid var(--line)}
+  .nav .nav-cta{display:none}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+:focus-visible{outline:3px solid var(--shu);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">靭トレ協会</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html#oshirase">お知らせ</a></li>
+      <li><a href="jintore-towa.html">靭トレとは</a></li>
+      <li><a href="index.html#videos">動画</a></li>
+      <li><a href="taiken.html">体験したい方へ</a></li>
+      <li><a href="index.html#info">協会情報</a></li>
+    </ul>
+    <a class="nav-cta" href="taiken.html">体験したい方へ</a>
+    <button class="menu-btn" id="menuBtn" aria-label="メニュー">≡ MENU</button>
+  </div>
+</header>
+
+<main>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="index.html">HOME</a> ／ 体験したい方へ</p>
+    <p class="eyebrow">EXPERIENCE</p>
+    <h1>体験したい方へ</h1>
+    <p class="lead">靭トレを体験してみたい方、体験会・勉強会にご興味のある方へ。ご予約・お問い合わせは公式LINEがスムーズです。まずはお気軽にご連絡ください。</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact">
+      <div class="contact-cta">
+        <h3>ご予約・お問い合わせ</h3>
+        <p>ご予約・ご相談は公式LINEで承っています。友だち追加のうえ、メッセージをお送りください。</p>
+        <a class="btn btn-line" id="lineBtn" href="https://lin.ee/tXkV1pd"><svg class="line-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 2H4a2 2 0 0 0-2 2v15l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/></svg>LINE 友だち追加</a>
+        <p style="font-size:12.5px;color:#9aa4ad;margin:14px 0 0">※お問い合わせは公式LINEを推奨しております。</p>
+      </div>
+      <div class="info">
+        <dl>
+          <dt>TEL</dt>
+          <dd><a href="tel:070-5585-0021">070-5585-0021</a></dd>
+          <dt>ADDRESS</dt>
+          <dd>〒166-0003<br>東京都杉並区高円寺南4丁目24-13<br>シャッツ高円寺401</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="form">
+  <div class="wrap">
+    <p class="eyebrow">CONTACT FORM</p>
+    <h2 class="sec-title">LINEをお持ちでない方はこちら</h2>
+    <p class="form-note">以下のフォームからお問い合わせいただけます。内容は協会に届きます。折り返し、ご入力いただいた連絡先へご返信いたします（数日いただく場合がございます）。</p>
+    <div class="form-card">
+      <div class="field">
+        <label for="f-name">お名前<span class="req">必須</span></label>
+        <input id="f-name" type="text" autocomplete="name" maxlength="60">
+      </div>
+      <div class="field">
+        <label for="f-email">メールアドレス<span class="req">必須</span></label>
+        <input id="f-email" type="email" autocomplete="email" maxlength="120" placeholder="example@example.com">
+      </div>
+      <div class="field">
+        <label for="f-tel">電話番号（任意）</label>
+        <input id="f-tel" type="tel" autocomplete="tel" maxlength="20">
+      </div>
+      <div class="field">
+        <label for="f-body">お問い合わせ内容<span class="req">必須</span></label>
+        <textarea id="f-body" maxlength="2000" placeholder="体験のご希望、ご質問など"></textarea>
+      </div>
+      <button class="form-submit" id="formSubmit" type="button">送信する</button>
+      <p class="form-msg" id="formMsg"></p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-alt">
+  <div class="wrap">
+    <p class="eyebrow">INFORMATION</p>
+    <h2 class="sec-title">体験会・勉強会／お知らせ</h2>
+    <ul class="news-list" id="newsList"></ul>
+    <div style="margin-top:26px">
+      <a class="btn" style="width:auto;border:1px solid var(--sumi);color:var(--sumi)" href="https://jintra.amebaownd.com/posts/page/1?type=grid" target="_blank" rel="noopener">すべてのお知らせを見る →</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a href="index.html" class="brand">靭トレ協会</a>
+    <p>骨・靭帯を連動させる、からだ本来の動かし方。<br>Copyright © <span id="yr"></span> 靭トレ協会. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="content.js"></script>
+<script>
+/* お知らせ（体験会・勉強会・更新）── 足す時は先頭に1行追加 */
+const NEWS = (window.SITE_CONTENT && window.SITE_CONTENT.taikenNews) || [];
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.getElementById("newsList").innerHTML = NEWS.map(n=>`
+  <li><a class="news-item" href="${esc(n.url)}" target="_blank" rel="noopener">
+    ${n.pin?'<span class="pin">ご案内</span><br>':''}
+    <span class="date">${esc(n.date)}</span>
+    <div class="title">${esc(n.title)}</div>
+  </a></li>`).join("");
+document.getElementById("yr").textContent=new Date().getFullYear();
+const mb=document.getElementById("menuBtn"),nl=document.getElementById("navLinks");
+mb.addEventListener("click",()=>nl.classList.toggle("open"));
+nl.addEventListener("click",e=>{if(e.target.tagName==="A")nl.classList.remove("open");});
+
+/* ===== 問い合わせフォーム =====
+   ↓ ここに、後で作るGASウェブアプリのURL（/exec）を貼ってください。
+   空のままだと送信できません（設定待ちの案内を表示します）。 */
+const FORM_ENDPOINT = "";
+
+const $f = id => document.getElementById(id);
+const msg = $f("formMsg");
+function showMsg(text, ok){ msg.textContent=text; msg.className = "form-msg " + (ok?"ok":"ng"); }
+$f("formSubmit").addEventListener("click", async ()=>{
+  const name=$f("f-name").value.trim();
+  const email=$f("f-email").value.trim();
+  const tel=$f("f-tel").value.trim();
+  const body=$f("f-body").value.trim();
+  if(!name||!email||!body){ showMsg("お名前・メールアドレス・お問い合わせ内容は必須です。", false); return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ showMsg("メールアドレスの形式をご確認ください。", false); return; }
+  if(!FORM_ENDPOINT){ showMsg("送信先が未設定です（管理者へご連絡ください）。", false); return; }
+  const btn=$f("formSubmit"); btn.disabled=true; showMsg("送信中…", true);
+  try{
+    await fetch(FORM_ENDPOINT, {
+      method:"POST", mode:"no-cors",
+      headers:{ "Content-Type":"text/plain;charset=utf-8" },
+      body: JSON.stringify({ name, email, tel, body, page:"体験したい方へ", at:new Date().toISOString() })
+    });
+    showMsg("送信しました。ありがとうございます。折り返しご連絡いたします。", true);
+    ["f-name","f-email","f-tel","f-body"].forEach(i=>$f(i).value="");
+  }catch(e){
+    showMsg("送信に失敗しました。お手数ですが時間をおいて再度お試しください。", false);
+  }finally{ btn.disabled=false; }
+});
+</script>
+</body>
+</html>
