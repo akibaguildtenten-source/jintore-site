@@ -1,20 +1,10 @@
-# Use DecapBridge PKCE auth (required)
 backend:
   name: git-gateway
-  repo: akibaguildtenten-source/jintore-site
   branch: main
-  auth_type: pkce
-  base_url: https://auth.decapbridge.com
-  auth_endpoint: /sites/3316a7d2-7aaf-49ad-a69a-d8e699715cd3/pkce
-  auth_token_endpoint: /sites/3316a7d2-7aaf-49ad-a69a-d8e699715cd3/token
+  # ▼ ログイン設定（DecapBridge）でこのリポジトリを連携すると、
+  #   下の2つのURLが発行されます。発行された値に置き換えてください。
+  identity_url: https://auth.decapbridge.com/sites/＜あなたのサイトID＞
   gateway_url: https://gateway.decapbridge.com
-
-# Enable PKCE fields (optional, recommended)
-auth:
-  email_claim: email
-  first_name_claim: first_name
-  last_name_claim: last_name
-  avatar_url_claim: avatar_url
 
 # 画像のアップロード先（CMSから入れた画像はここに保存されます）
 media_folder: "images"
@@ -47,6 +37,8 @@ collections:
               - { label: "本文", name: "body", widget: "text" }
               - { label: "強調枠にする", name: "important", widget: "boolean", default: false, required: false }
               - { label: "画像（任意）", name: "image", widget: "image", required: false }
+              - { label: "動画URL（YouTube/Vimeo・任意）", name: "videoUrl", widget: "string", required: false }
+              - { label: "動画ファイル（任意）", name: "video", widget: "file", required: false }
               - label: "リンク（任意）"
                 name: "link"
                 widget: "object"
@@ -77,6 +69,8 @@ collections:
               - { label: "仮表紙の大見出し", name: "cover", widget: "string", required: false }
               - { label: "仮表紙の小見出し", name: "coverSub", widget: "string", required: false }
               - { label: "表紙画像（任意）", name: "img", widget: "image", required: false }
+              - { label: "動画URL（YouTube/Vimeo・任意）", name: "videoUrl", widget: "string", required: false }
+              - { label: "動画ファイル（任意）", name: "video", widget: "file", required: false }
               - label: "購入リンク"
                 name: "links"
                 widget: "list"
@@ -100,6 +94,8 @@ collections:
               - { label: "仮表紙の大見出し", name: "cover", widget: "string", required: false }
               - { label: "仮表紙の小見出し", name: "coverSub", widget: "string", required: false }
               - { label: "表紙画像（任意）", name: "img", widget: "image", required: false }
+              - { label: "動画URL（YouTube/Vimeo・任意）", name: "videoUrl", widget: "string", required: false }
+              - { label: "動画ファイル（任意）", name: "video", widget: "file", required: false }
               - label: "購入リンク"
                 name: "links"
                 widget: "list"
