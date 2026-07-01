@@ -168,6 +168,9 @@ header.site{
 .notice h3{font-family:var(--disp);font-weight:900;font-size:clamp(17px,2.6vw,21px);line-height:1.5;margin:0 0 10px}
 .notice p{font-size:14.5px;line-height:1.9;color:var(--sumi-soft);margin:0}
 .notice-img{max-width:100%;border-radius:6px;margin-top:12px;border:1px solid var(--line)}
+.media-video{width:100%;border-radius:6px;margin-top:12px;border:1px solid var(--line);display:block}
+.media-embed{position:relative;width:100%;aspect-ratio:16/9;margin-top:12px;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#000}
+.media-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .notice .buy{margin-top:14px}
 
 /* ============================================================
@@ -442,15 +445,43 @@ $("#newsMore").href = DATA.newsMoreUrl;
 $("#yr").textContent = new Date().getFullYear();
 
 /* お知らせ */
+/* 動画の埋め込み（YouTube/Vimeoのリンク、または動画ファイルに対応） */
+function videoEmbed(url, file){
+  // 動画ファイル（アップロードしたmp4など）優先
+  if(file){
+    return `<video class="media-video" src="${esc(file)}" controls preload="metadata" playsinline></video>`;
+  }
+  if(!url) return "";
+  const u = String(url).trim();
+  // YouTube
+  let m = u.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
+  if(m){
+    return `<div class="media-embed"><iframe src="https://www.youtube.com/embed/${m[1]}" title="YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
+  }
+  // Vimeo
+  m = u.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if(m){
+    return `<div class="media-embed"><iframe src="https://player.vimeo.com/video/${m[1]}" title="Vimeo" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+  }
+  // 直接の動画ファイルURL
+  if(/\.(mp4|webm|ogg|mov)(\?.*)?$/i.test(u)){
+    return `<video class="media-video" src="${esc(u)}" controls preload="metadata" playsinline></video>`;
+  }
+  // それ以外はリンク表示
+  return `<a class="buy" href="${esc(u)}" target="_blank" rel="noopener">動画を見る →</a>`;
+}
+
 $("#noticeList").innerHTML = DATA.announcements.map(n=>{
   const link = n.link ? `<a class="buy" href="${esc(n.link.url)}" target="_blank" rel="noopener">${esc(n.link.label)} →</a>` : "";
   const date = n.date ? `<span class="notice-date">${esc(n.date)}</span>` : "";
   const img = n.image ? `<img class="notice-img" src="${esc(n.image)}" alt="">` : "";
+  const video = videoEmbed(n.videoUrl, n.video);
   return `<article class="notice${n.important?" important":""}">
     <div class="notice-head"><span class="notice-tag">${esc(n.tag)}</span>${date}</div>
     <h3>${esc(n.title)}</h3>
     <p>${esc(n.body)}</p>
     ${img}
+    ${video}
     ${link}
   </article>`;
 }).join("");
@@ -469,6 +500,7 @@ function bookCard(b){
     ? `<img src="${esc(b.img)}" alt="${esc(b.title)}">`
     : `<div class="ct">${esc(b.cover||b.title)}</div>${b.coverSub?`<div class="cs">${esc(b.coverSub)}</div>`:""}`;
   const links = (b.links||[]).map(l=>`<a class="buy${l.alt?" alt":""}" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("");
+  const video = videoEmbed(b.videoUrl, b.video);
   return `<article class="book">
     <div class="cover">${cover}</div>
     <div class="meta">
@@ -476,6 +508,7 @@ function bookCard(b){
       <div class="t">${esc(b.title)}</div>
       ${b.price?`<div class="price">${esc(b.price)}</div>`:""}
       <div class="d">${esc(b.desc||"")}</div>
+      ${video}
       <div class="links">${links}</div>
     </div>
   </article>`;
