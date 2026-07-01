@@ -30,19 +30,20 @@
   "newsMoreUrl": "https://jintra.amebaownd.com/posts/page/1?type=grid",
   "books": [
     {
-      "title": "一点に落ちる重さの地図",
-      "cover": "一点に落ちる重さの地図",
-      "coverSub": "重さと骨格が応じ続けるカラダの原理",
       "img": "",
-      "tag": "Kindle",
       "price": "¥1,250",
+      "coverSub": "重さと骨格が応じ続けるカラダの原理",
       "desc": "武術的身体操作と生体力学の視点から、「一点に落ちる重さ」を起点に身体の働きを見つめ直す一冊。",
+      "cover": "一点に落ちる重さの地図",
+      "title": "一点に落ちる重さの地図",
       "links": [
         {
           "label": "Amazon",
           "url": "https://www.amazon.co.jp/dp/B0H3WK5NXG"
         }
-      ]
+      ],
+      "tag": "Kindle",
+      "video": "/images/90b956497c1849b2b3ff8871e66d5ee9.mov"
     },
     {
       "title": "頑張る時代から、ゆだねる時代へ",
