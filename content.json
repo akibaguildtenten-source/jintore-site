@@ -1,72 +1,33 @@
 {
+  "media": [
+    {
+      "kind": "WEB記事",
+      "title": "加藤師範インタビュー（IKIGAI JAPAN）前半",
+      "url": "https://ikigaijapan-neo.com/ikigai-interview/636/"
+    },
+    {
+      "kind": "Yahoo!ニュース",
+      "title": "FOOTBALL ZONE／中島選手と靭トレ",
+      "url": "https://share.google/WxAPTteFkyizcqRD4"
+    },
+    {
+      "kind": "雑誌",
+      "title": "月刊「ザ・フナイ」vol.214（2025年8月号）加藤師範インタビュー掲載",
+      "url": ""
+    },
+    {
+      "kind": "雑誌",
+      "title": "月刊「秘伝」2024年11月号 カラーグラビア・記事掲載",
+      "url": "https://webhiden.jp/topics/hiden202411-hatsubai/"
+    },
+    {
+      "kind": "書籍",
+      "title": "「縄結いは覚醒の秘技」保江邦夫・神尾郁恵 著（明窓出版）に加藤師範について掲載",
+      "url": ""
+    }
+  ],
   "experienceUrl": "taiken.html",
-  "lineUrl": "https://lin.ee/tXkV1pd",
-  "announcements": [
-    {
-      "tag": "新刊書籍",
-      "date": "2026.06.04",
-      "title": "『「靭トレ」一点に落ちる重さの地図』Kindle版 解禁",
-      "body": "待望の最新刊が解禁されました。「動きは、本当に自分で作っているのだろうか。」——「一点に落ちる重さ」を起点に、カラダを見つめ直す一冊です。ぜひお読み下さい。",
-      "link": {
-        "label": "Amazonで見る",
-        "url": "https://www.amazon.co.jp/dp/B0H3WK5NXG"
-      }
-    },
-    {
-      "tag": "緊急告知",
-      "date": "7月第1週 公開予定",
-      "title": "YouTube「角由紀子のヤバイ帝国」に 靭トレ・加藤師範が出演決定！",
-      "body": "不思議系ウェブサイト「TOCANA」元編集長・角由紀子さんのYouTubeチャンネル「角由紀子のヤバイ帝国」（登録者45万人）に加藤師範が出演します。カラダの仕組み、感覚の世界、そしてまだ多くの人が気づいていないカラダの可能性について、前編・後編で公開予定です。",
-      "link": {
-        "label": "チャンネルを見る",
-        "url": "https://www.youtube.com/@yabaiteikoku"
-      }
-    },
-    {
-      "important": true,
-      "tag": "重要",
-      "title": "「靭トレ」および「縄結い」の認定と提供について",
-      "body": "はせくらみゆき先生が降ろし、保江邦夫先生から承った名が【縄結い】です。今日現在まで「靭トレ」「縄結い」ともに加藤師範が認定した人間はおりません。また、縄結いを単独で行うことも断じてございません。靭トレにて手が足りないと判断した場合のみ、麻縄にて補足するのが縄結いです。"
-    },
-    {
-      "important": true,
-      "tag": "お知らせ",
-      "title": "指導体制について",
-      "body": "直接指導は今年の7月までと明記し、ご心配をお掛け致しましたが、今しばらくはこの限りではありません。今後、新しい企画等で指導体制が変わる可能性もございますが、今はその時まで、全力で皆様と向き合い、ご指導させていただきます。"
-    }
-  ],
-  "union": [
-    {
-      "en": "BASIC",
-      "ja": "靭トレ"
-    },
-    {
-      "en": "CARE",
-      "ja": "ケア靭トレ"
-    },
-    {
-      "en": "ARC",
-      "ja": "アーク靭トレ"
-    },
-    {
-      "en": "PERFORMING",
-      "ja": "パフォーミングアーツ靭トレ"
-    },
-    {
-      "en": "WORK",
-      "ja": "ワーク靭トレ"
-    }
-  ],
-  "activities": [
-    "トレーニングの考案・普及",
-    "書籍出版・映像出版",
-    "健康イベント・セミナー・講演会の企画・実施",
-    "施術者向け靭トレ・ケア靭トレ通信講座",
-    "メディア出演",
-    "トレーナー人材の育成",
-    "競技者・表現者の専門的サポート・ケア",
-    "ハンディキャップをお持ちの方の社会参画"
-  ],
+  "newsMoreUrl": "https://jintra.amebaownd.com/posts/page/1?type=grid",
   "books": [
     {
       "title": "一点に落ちる重さの地図",
@@ -194,6 +155,106 @@
       ]
     }
   ],
+  "taikenNews": [
+    {
+      "date": "案内",
+      "pin": true,
+      "title": "体験会・勉強会のご案内（お申し込みはこちら）",
+      "url": "https://jintra.amebaownd.com/posts/21569972"
+    },
+    {
+      "date": "2025.05.08",
+      "title": "【5/8更新】5月2日〜4日 靭トレ大阪セミナー、大盛況にて終了いたしました！",
+      "url": "https://jintra.amebaownd.com/posts/56804001"
+    },
+    {
+      "date": "2025.04.23",
+      "title": "【4/24更新】〜縄結による完全瞑想〜【追加開催決定】",
+      "url": "https://jintra.amebaownd.com/posts/56725783"
+    },
+    {
+      "date": "2025.04.06",
+      "title": "【4/6更新】5月2日(金)・3日(土) 大阪セミナー開催決定！",
+      "url": "https://jintra.amebaownd.com/posts/56611642"
+    },
+    {
+      "date": "2025.03.11",
+      "title": "【3/11更新】靭トレ大阪セミナー、大盛況にて終了いたしました！",
+      "url": "https://jintra.amebaownd.com/posts/56438288"
+    },
+    {
+      "date": "2022.04.24",
+      "title": "靭トレの理論が学べるマンガがInstagramで始まりました",
+      "url": "https://jintra.amebaownd.com/posts/33950324"
+    }
+  ],
+  "announcements": [
+    {
+      "tag": "新刊書籍",
+      "date": "2026.06.04",
+      "title": "『「靭トレ」一点に落ちる重さの地図』Kindle版 解禁",
+      "body": "待望の最新刊が解禁されました。「動きは、本当に自分で作っているのだろうか。」——「一点に落ちる重さ」を起点に、カラダを見つめ直す一冊です。ぜひお読み下さい。",
+      "link": {
+        "label": "Amazonで見る",
+        "url": "https://www.amazon.co.jp/dp/B0H3WK5NXG"
+      },
+      "important": true
+    },
+    {
+      "tag": "緊急告知",
+      "date": "7月第1週 公開予定",
+      "title": "YouTube「角由紀子のヤバイ帝国」に 靭トレ・加藤師範が出演決定！",
+      "body": "不思議系ウェブサイト「TOCANA」元編集長・角由紀子さんのYouTubeチャンネル「角由紀子のヤバイ帝国」（登録者45万人）に加藤師範が出演します。カラダの仕組み、感覚の世界、そしてまだ多くの人が気づいていないカラダの可能性について、前編・後編で公開予定です。",
+      "link": {
+        "label": "チャンネルを見る",
+        "url": "https://www.youtube.com/@yabaiteikoku"
+      }
+    },
+    {
+      "important": true,
+      "tag": "重要",
+      "title": "「靭トレ」および「縄結い」の認定と提供について",
+      "body": "はせくらみゆき先生が降ろし、保江邦夫先生から承った名が【縄結い】です。今日現在まで「靭トレ」「縄結い」ともに加藤師範が認定した人間はおりません。また、縄結いを単独で行うことも断じてございません。靭トレにて手が足りないと判断した場合のみ、麻縄にて補足するのが縄結いです。"
+    },
+    {
+      "important": true,
+      "tag": "お知らせ",
+      "title": "指導体制について",
+      "body": "直接指導は今年の7月までと明記し、ご心配をお掛け致しましたが、今しばらくはこの限りではありません。今後、新しい企画等で指導体制が変わる可能性もございますが、今はその時まで、全力で皆様と向き合い、ご指導させていただきます。"
+    }
+  ],
+  "activities": [
+    "トレーニングの考案・普及",
+    "書籍出版・映像出版",
+    "健康イベント・セミナー・講演会の企画・実施",
+    "施術者向け靭トレ・ケア靭トレ通信講座",
+    "メディア出演",
+    "トレーナー人材の育成",
+    "競技者・表現者の専門的サポート・ケア",
+    "ハンディキャップをお持ちの方の社会参画"
+  ],
+  "union": [
+    {
+      "en": "BASIC",
+      "ja": "靭トレ"
+    },
+    {
+      "en": "CARE",
+      "ja": "ケア靭トレ"
+    },
+    {
+      "en": "ARC",
+      "ja": "アーク靭トレ"
+    },
+    {
+      "en": "PERFORMING",
+      "ja": "パフォーミングアーツ靭トレ"
+    },
+    {
+      "en": "WORK",
+      "ja": "ワーク靭トレ"
+    }
+  ],
   "dvd": [
     {
       "title": "DVD 靭トレ入門",
@@ -209,6 +270,28 @@
           "url": "https://www.hiden-shop.jp/SHOP/zin1d.html"
         }
       ]
+    }
+  ],
+  "news": [
+    {
+      "date": "2025.05.08",
+      "title": "5月2日〜4日 靭トレ大阪セミナー、大盛況にて終了いたしました！",
+      "url": "https://jintra.amebaownd.com/posts/56804001"
+    },
+    {
+      "date": "2025.04.23",
+      "title": "〜縄結による完全瞑想〜【追加開催決定】",
+      "url": "https://jintra.amebaownd.com/posts/56725783"
+    }
+  ],
+  "sns": [
+    {
+      "label": "TikTok（加藤師範）",
+      "url": "https://www.tiktok.com/@user8904242328501"
+    },
+    {
+      "label": "X（旧Twitter）",
+      "url": "https://x.com/jintore2727"
     }
   ],
   "videos": [
@@ -357,87 +440,5 @@
       "title": "靭トレ 動画"
     }
   ],
-  "media": [
-    {
-      "kind": "WEB記事",
-      "title": "加藤師範インタビュー（IKIGAI JAPAN）前半",
-      "url": "https://ikigaijapan-neo.com/ikigai-interview/636/"
-    },
-    {
-      "kind": "Yahoo!ニュース",
-      "title": "FOOTBALL ZONE／中島選手と靭トレ",
-      "url": "https://share.google/WxAPTteFkyizcqRD4"
-    },
-    {
-      "kind": "雑誌",
-      "title": "月刊「ザ・フナイ」vol.214（2025年8月号）加藤師範インタビュー掲載",
-      "url": ""
-    },
-    {
-      "kind": "雑誌",
-      "title": "月刊「秘伝」2024年11月号 カラーグラビア・記事掲載",
-      "url": "https://webhiden.jp/topics/hiden202411-hatsubai/"
-    },
-    {
-      "kind": "書籍",
-      "title": "「縄結いは覚醒の秘技」保江邦夫・神尾郁恵 著（明窓出版）に加藤師範について掲載",
-      "url": ""
-    }
-  ],
-  "news": [
-    {
-      "date": "2025.05.08",
-      "title": "5月2日〜4日 靭トレ大阪セミナー、大盛況にて終了いたしました！",
-      "url": "https://jintra.amebaownd.com/posts/56804001"
-    },
-    {
-      "date": "2025.04.23",
-      "title": "〜縄結による完全瞑想〜【追加開催決定】",
-      "url": "https://jintra.amebaownd.com/posts/56725783"
-    }
-  ],
-  "newsMoreUrl": "https://jintra.amebaownd.com/posts/page/1?type=grid",
-  "sns": [
-    {
-      "label": "TikTok（加藤師範）",
-      "url": "https://www.tiktok.com/@user8904242328501"
-    },
-    {
-      "label": "X（旧Twitter）",
-      "url": "https://x.com/jintore2727"
-    }
-  ],
-  "taikenNews": [
-    {
-      "date": "案内",
-      "pin": true,
-      "title": "体験会・勉強会のご案内（お申し込みはこちら）",
-      "url": "https://jintra.amebaownd.com/posts/21569972"
-    },
-    {
-      "date": "2025.05.08",
-      "title": "【5/8更新】5月2日〜4日 靭トレ大阪セミナー、大盛況にて終了いたしました！",
-      "url": "https://jintra.amebaownd.com/posts/56804001"
-    },
-    {
-      "date": "2025.04.23",
-      "title": "【4/24更新】〜縄結による完全瞑想〜【追加開催決定】",
-      "url": "https://jintra.amebaownd.com/posts/56725783"
-    },
-    {
-      "date": "2025.04.06",
-      "title": "【4/6更新】5月2日(金)・3日(土) 大阪セミナー開催決定！",
-      "url": "https://jintra.amebaownd.com/posts/56611642"
-    },
-    {
-      "date": "2025.03.11",
-      "title": "【3/11更新】靭トレ大阪セミナー、大盛況にて終了いたしました！",
-      "url": "https://jintra.amebaownd.com/posts/56438288"
-    },
-    {
-      "date": "2022.04.24",
-      "title": "靭トレの理論が学べるマンガがInstagramで始まりました",
-      "url": "https://jintra.amebaownd.com/posts/33950324"
-    }
-  ]
+  "lineUrl": "https://lin.ee/tXkV1pd"
 }
