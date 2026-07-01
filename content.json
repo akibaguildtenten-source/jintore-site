@@ -200,7 +200,7 @@
         "url": "https://www.amazon.co.jp/dp/B0H3WK5NXG"
       },
       "important": true,
-      "video": "/images/90b956497c1849b2b3ff8871e66d5ee9.mov"
+      "video": ""
     },
     {
       "tag": "緊急告知",
@@ -225,7 +225,8 @@
       "body": "直接指導は今年の7月までと明記し、ご心配をお掛け致しましたが、今しばらくはこの限りではありません。今後、新しい企画等で指導体制が変わる可能性もございますが、今はその時まで、全力で皆様と向き合い、ご指導させていただきます。",
       "image": "",
       "link": {
-        "url": "https://shiny-beijinho-78ee5d.netlify.app/images/ce49ec0e-9a82-4857-9264-9cf035ad0439.png"
+        "url": "https://shiny-beijinho-78ee5d.netlify.app/images/ce49ec0e-9a82-4857-9264-9cf035ad0439.png",
+        "label": "詳細"
       }
     }
   ],
