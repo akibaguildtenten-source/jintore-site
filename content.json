@@ -30,7 +30,22 @@
   "newsMoreUrl": "https://jintra.amebaownd.com/posts/page/1?type=grid",
   "books": [
     {
-      "img": "",
+      "title": "首・肩・腰が軽くなる本",
+      "tag": "Kindle",
+      "img": "/images/img_8340.jpeg",
+      "price": "¥1,250",
+      "desc": "がんばらずに動きやすさが戻る「カラダの条件」。「動けない」のは、筋力や年齢のせいではないかもしれません。本来のカラダを思い出すための一冊です。",
+      "coverSub": "",
+      "links": [
+        {
+          "alt": true,
+          "url": "https://amzn.asia/d/01bZ0yu4",
+          "label": "Amazon"
+        }
+      ]
+    },
+    {
+      "img": "/images/img_8146.jpeg",
       "price": "¥1,250",
       "coverSub": "重さと骨格が応じ続けるカラダの原理",
       "desc": "武術的身体操作と生体力学の視点から、「一点に落ちる重さ」を起点に身体の働きを見つめ直す一冊。",
