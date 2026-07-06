@@ -9,5 +9,118 @@
 <body>
   <!-- Decap CMS 本体 -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <!-- カスタムプレビュー（公開前に実サイトに近い見た目で確認できます） -->
+  <script>
+  (function init(){
+    if(!window.CMS || typeof window.createClass === "undefined" || typeof window.h === "undefined"){
+      return setTimeout(init, 150);
+    }
+
+    CMS.registerPreviewStyle(
+      "body{font-family:'Noto Sans JP',sans-serif;color:#141414;line-height:1.85;padding:16px;background:#fff}" +
+      ".pv-sec{margin:0 0 28px}" +
+      ".pv-h{font-weight:900;font-size:15px;color:#143f6e;border-left:4px solid #1f5c9e;padding-left:8px;margin:0 0 12px;letter-spacing:.04em}" +
+      ".pv-card{border:1px solid #e2e8ef;border-left:3px solid #1f5c9e;border-radius:6px;padding:14px 16px;margin:0 0 12px;background:#f8fafc;overflow:hidden}" +
+      ".pv-tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#1f5c9e;padding:3px 9px;border-radius:2px;margin-right:8px;letter-spacing:.08em}" +
+      ".pv-date{font-size:12px;color:#54606b}" +
+      ".pv-title{font-weight:900;font-size:16px;margin:8px 0}" +
+      ".pv-price{font-size:13px;color:#1f5c9e;font-weight:700;margin:2px 0}" +
+      ".pv-body{font-size:14px;color:#2b3138;white-space:pre-wrap;word-break:break-word}" +
+      ".pv-imgs{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}" +
+      ".pv-imgs img{width:120px;height:90px;object-fit:cover;border-radius:6px;border:1px solid #e2e8ef}" +
+      ".pv-media{max-width:360px;width:100%;max-height:260px;object-fit:contain;border-radius:6px;border:1px solid #e2e8ef;margin-top:10px;display:block;background:#000}" +
+      ".pv-cover{width:90px;height:120px;object-fit:cover;border-radius:6px;border:1px solid #e2e8ef;float:left;margin:0 14px 8px 0}" +
+      ".pv-note{font-size:12.5px;color:#54606b;margin-top:8px}" +
+      "img,video,iframe{max-width:100%}",
+      { raw: true }
+    );
+
+    var h = window.h;
+
+    var Preview = window.createClass({
+      render: function(){
+        var getAsset = this.props.getAsset;
+        var data = {};
+        try { data = this.props.entry.getIn(["data"]).toJS() || {}; } catch(e){ data = {}; }
+
+        function resolve(src){
+          if(!src) return null;
+          if(/^https?:\/\//.test(src)) return src;
+          try { return getAsset(src); } catch(e){ return src; }
+        }
+        function ytId(u){
+          if(!u) return null;
+          var m = String(u).match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
+          return m ? m[1] : null;
+        }
+        function mediaNode(item, key){
+          if(item.video){ return h("video", { className:"pv-media", src:resolve(item.video), controls:true, key:key }); }
+          if(item.videoUrl){
+            var id = ytId(item.videoUrl);
+            if(id){ return h("img", { className:"pv-media", src:"https://img.youtube.com/vi/"+id+"/hqdefault.jpg", key:key }); }
+            return h("div", { className:"pv-note", key:key }, "\u{1F3AC} \u52D5\u753B: " + item.videoUrl);
+          }
+          return null;
+        }
+        function imgsOf(item){
+          var arr = [];
+          if(Array.isArray(item.images)) arr = item.images.filter(Boolean);
+          else if(item.image) arr = [item.image];
+          return arr.slice(0,3);
+        }
+        function section(title, cards){
+          return h("div", { className:"pv-sec" }, [
+            h("div", { className:"pv-h", key:"h" }, title),
+            (cards && cards.length) ? cards : h("div", { className:"pv-note", key:"n" }, "\uFF08\u9805\u76EE\u306F\u3042\u308A\u307E\u305B\u3093\uFF09")
+          ]);
+        }
+
+        var sections = [];
+
+        var anns = data.announcements || [];
+        sections.push(section("\u304A\u77E5\u3089\u305B", anns.map(function(n, i){
+          var im = imgsOf(n);
+          return h("div", { className:"pv-card", key:i }, [
+            h("div", { key:"hd" }, [
+              n.tag ? h("span", { className:"pv-tag", key:"t" }, n.tag) : null,
+              n.date ? h("span", { className:"pv-date", key:"d" }, n.date) : null
+            ]),
+            h("div", { className:"pv-title", key:"ti" }, n.title || ""),
+            h("div", { className:"pv-body", key:"bd" }, n.body || ""),
+            im.length ? h("div", { className:"pv-imgs", key:"im" }, im.map(function(s, j){ return h("img", { src:resolve(s), key:j }); })) : null,
+            mediaNode(n, "mv")
+          ]);
+        })));
+
+        function bookCard(b, i){
+          return h("div", { className:"pv-card", key:i }, [
+            b.img ? h("img", { className:"pv-cover", src:resolve(b.img), key:"c" }) : null,
+            b.tag ? h("span", { className:"pv-tag", key:"t" }, b.tag) : null,
+            h("div", { className:"pv-title", key:"ti" }, b.title || ""),
+            b.price ? h("div", { className:"pv-price", key:"p" }, b.price) : null,
+            h("div", { className:"pv-body", key:"d" }, b.desc || ""),
+            mediaNode(b, "mv")
+          ]);
+        }
+        sections.push(section("\u66F8\u7C4D", (data.books || []).map(bookCard)));
+        sections.push(section("\u6620\u50CF\u4F5C\u54C1\uFF08DVD\uFF09", (data.dvd || []).map(bookCard)));
+
+        var media = data.media || [];
+        sections.push(section("\u30E1\u30C7\u30A3\u30A2\u63B2\u8F09", media.map(function(m, i){
+          return h("div", { className:"pv-card", key:i }, [
+            m.kind ? h("span", { className:"pv-tag", key:"k" }, m.kind) : null,
+            h("div", { className:"pv-title", key:"ti" }, m.title || ""),
+            m.url ? h("div", { className:"pv-note", key:"u" }, m.url) : null
+          ]);
+        })));
+
+        return h("div", {}, sections);
+      }
+    });
+
+    CMS.registerPreviewTemplate("content", Preview);
+  })();
+  </script>
 </body>
 </html>
