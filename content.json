@@ -229,6 +229,20 @@
         "url": "https://shiny-beijinho-78ee5d.netlify.app/images/ce49ec0e-9a82-4857-9264-9cf035ad0439.png",
         "label": "詳細"
       }
+    },
+    {
+      "important": true,
+      "tag": "新刊書籍",
+      "date": "2026.7.6",
+      "title": "「靱トレ|首・肩・腰が軽くなる本」 Kindle版",
+      "body": "がんばらずに動きやすさが戻る「カラダの条件」\n「動けない」のは、筋力や年齢のせいではないかもしれません。\n本来のカラダを思い出すための一冊です。\n",
+      "images": [
+        "/images/img_8340.jpeg"
+      ],
+      "link": {
+        "label": "Amazon",
+        "url": "https://www.amazon.co.jp/dp/B0H38CVCD3?ref=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&ref_=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&social_share=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&bestFormat=true"
+      }
     }
   ],
   "activities": [
