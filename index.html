@@ -167,7 +167,14 @@ header.site{
 .notice-date{font-family:var(--mono);font-size:12.5px;color:var(--sumi-soft);letter-spacing:.06em}
 .notice h3{font-family:var(--disp);font-weight:900;font-size:clamp(17px,2.6vw,21px);line-height:1.5;margin:0 0 10px}
 .notice p{font-size:14.5px;line-height:1.9;color:var(--sumi-soft);margin:0}
-.notice-img{max-width:100%;border-radius:6px;margin-top:12px;border:1px solid var(--line)}
+.notice-link{display:flex;gap:18px;align-items:flex-start;text-decoration:none;color:inherit;transition:background .15s,border-color .15s,transform .15s}
+.notice-link:hover{border-left-color:var(--shu-deep);background:var(--paper-2);transform:translateY(-1px)}
+.notice-body{flex:1;min-width:0}
+.notice-more{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:12px;font-weight:700;color:var(--shu);letter-spacing:.04em}
+.notice-thumb{flex:none;width:120px;height:90px;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:var(--paper-2)}
+.notice-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+@media(max-width:560px){.notice-link{flex-direction:column-reverse}.notice-thumb{width:100%;height:180px}}
+.notice-img{max-width:min(100%,420px);max-height:360px;width:auto;height:auto;object-fit:contain;border-radius:6px;margin-top:12px;border:1px solid var(--line);display:block}
 .media-video{width:100%;border-radius:6px;margin-top:12px;border:1px solid var(--line);display:block}
 .media-embed{position:relative;width:100%;aspect-ratio:16/9;margin-top:12px;border-radius:6px;overflow:hidden;border:1px solid var(--line);background:#000}
 .media-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
@@ -225,7 +232,7 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
       <li><a href="jintore-towa.html">靭トレとは</a></li>
       <li><a href="#books">書籍・DVD</a></li>
       <li><a href="#videos">動画</a></li>
-      <li><a href="#news">NEWS</a></li>
+      <li><a href="#news">これまでの活動</a></li>
       <li><a href="#info">協会情報</a></li>
     </ul>
     <a class="nav-cta" id="navExperience" href="#">体験したい方へ</a>
@@ -353,8 +360,8 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
      ============================================================ -->
 <section id="news">
   <div class="wrap">
-    <p class="eyebrow">NEWS</p>
-    <h2 class="sec-title">最新情報</h2>
+    <p class="eyebrow">ACTIVITY</p>
+    <h2 class="sec-title">これまでの活動</h2>
     <div class="news-list" id="newsList"></div>
     <div style="margin-top:28px">
       <a class="btn btn-ghost" id="newsMore" href="#">もっと見る →</a>
@@ -471,19 +478,21 @@ function videoEmbed(url, file){
   return `<a class="buy" href="${esc(u)}" target="_blank" rel="noopener">動画を見る →</a>`;
 }
 
-$("#noticeList").innerHTML = DATA.announcements.map(n=>{
-  const link = n.link ? `<a class="buy" href="${esc(n.link.url)}" target="_blank" rel="noopener">${esc(n.link.label)} →</a>` : "";
+$("#noticeList").innerHTML = DATA.announcements.map((n,i)=>{
   const date = n.date ? `<span class="notice-date">${esc(n.date)}</span>` : "";
-  const img = n.image ? `<img class="notice-img" src="${esc(n.image)}" alt="">` : "";
-  const video = videoEmbed(n.videoUrl, n.video);
-  return `<article class="notice${n.important?" important":""}">
-    <div class="notice-head"><span class="notice-tag">${esc(n.tag)}</span>${date}</div>
-    <h3>${esc(n.title)}</h3>
-    <p>${esc(n.body)}</p>
-    ${img}
-    ${video}
-    ${link}
-  </article>`;
+  const thumbSrc = (n.images && n.images[0]) ? n.images[0] : (n.image || "");
+  const thumb = thumbSrc ? `<div class="notice-thumb"><img src="${esc(thumbSrc)}" alt="" loading="lazy"></div>` : "";
+  const raw = (n.body||"").replace(/\s+/g," ").trim();
+  const ex = raw.length>70 ? raw.slice(0,70)+"…" : raw;
+  return `<a class="notice notice-link${n.important?" important":""}" href="oshirase.html?i=${i}">
+    <div class="notice-body">
+      <div class="notice-head"><span class="notice-tag">${esc(n.tag)}</span>${date}</div>
+      <h3>${esc(n.title)}</h3>
+      <p>${esc(ex)}</p>
+      <span class="notice-more">詳細を見る →</span>
+    </div>
+    ${thumb}
+  </a>`;
 }).join("");
 
 /* UNION */
