@@ -33,6 +33,14 @@ main{padding:34px 0 60px}
 .a-date{font-family:var(--mono);font-size:12.5px;color:var(--sumi-soft);letter-spacing:.06em}
 h1.a-title{font-family:var(--disp);font-weight:900;font-size:clamp(22px,4vw,30px);line-height:1.5;margin:0 0 22px}
 .a-body{font-size:15.5px;line-height:2;color:#2b3138;white-space:pre-wrap;word-break:break-word}
+.blk{white-space:pre-wrap;word-break:break-word;line-height:2;margin:0 0 18px}
+.blk-size-normal{font-size:15.5px}
+.blk-size-large{font-size:18.5px;font-weight:700}
+.blk-size-small{font-size:13.5px}
+.blk-color-normal{color:#2b3138}
+.blk-color-navy{color:#143f6e;font-weight:700}
+.blk-color-red{color:#b23a3a;font-weight:700}
+.blk-img{width:100%;max-height:480px;object-fit:contain;border-radius:8px;border:1px solid var(--line);background:var(--paper-2);display:block;margin:0 0 20px}
 .a-images{display:grid;gap:14px;margin:24px 0}
 .a-images img{width:100%;max-height:560px;object-fit:contain;border-radius:8px;border:1px solid var(--line);background:var(--paper-2);display:block}
 .media-video{width:100%;border-radius:8px;margin:20px 0 0;border:1px solid var(--line);display:block}
@@ -40,6 +48,8 @@ h1.a-title{font-family:var(--disp);font-weight:900;font-size:clamp(22px,4vw,30px
 .media-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .a-link{display:inline-block;margin-top:24px;background:var(--shu);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:12px 24px;border-radius:3px}
 .a-link:hover{background:var(--shu-deep)}
+.a-links{display:flex;flex-wrap:wrap;gap:12px}
+.a-links .a-link{margin-top:24px}
 .a-foot{margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
 .notfound{padding:60px 0;text-align:center;color:var(--sumi-soft)}
 footer.site{border-top:1px solid var(--line);padding:26px 0;margin-top:20px}
@@ -103,19 +113,39 @@ function render(DATA){
   }
   document.title = (n.title ? n.title + " | " : "") + "お知らせ | 靭トレ協会";
   const date = n.date ? `<span class="a-date">${esc(n.date)}</span>` : "";
-  // 画像（最大3枚）。新形式 images[] があればそれを、無ければ旧 image を使用
-  let imgs = [];
-  if(Array.isArray(n.images)) imgs = n.images.filter(Boolean);
-  else if(n.image) imgs = [n.image];
-  imgs = imgs.slice(0,3);
-  const images = imgs.length ? `<div class="a-images">${imgs.map(src=>`<img src="${esc(src)}" alt="" loading="lazy">`).join("")}</div>` : "";
+
+  // 本文ブロック（新形式）。あれば優先し、画像を各ブロックの後に配置
+  let bodyHtml = "";
+  if(Array.isArray(n.blocks) && n.blocks.length){
+    bodyHtml = n.blocks.map(function(b){
+      const color = ["normal","navy","red"].includes(b.color) ? b.color : "normal";
+      const size = ["normal","large","small"].includes(b.size) ? b.size : "normal";
+      const text = b.text ? `<div class="blk blk-color-${color} blk-size-${size}">${esc(b.text)}</div>` : "";
+      const img = b.image ? `<img class="blk-img" src="${esc(b.image)}" alt="" loading="lazy">` : "";
+      return text + img;
+    }).join("");
+  } else {
+    // 旧形式：本文＋画像（最大3枚）
+    let imgs = [];
+    if(Array.isArray(n.images)) imgs = n.images.filter(Boolean);
+    else if(n.image) imgs = [n.image];
+    imgs = imgs.slice(0,3);
+    const images = imgs.length ? `<div class="a-images">${imgs.map(src=>`<img src="${esc(src)}" alt="" loading="lazy">`).join("")}</div>` : "";
+    bodyHtml = `<div class="a-body">${esc(n.body||"")}</div>${images}`;
+  }
+
   const video = videoEmbed(n.videoUrl, n.video);
-  const link = (n.link && n.link.url) ? `<a class="a-link" href="${esc(n.link.url)}" target="_blank" rel="noopener">${esc(n.link.label||"詳しく見る")} →</a>` : "";
+  const links = [];
+  if(n.url) links.push(`<a class="a-link" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.urlLabel || "詳しく見る①")} →</a>`);
+  if(n.url2) links.push(`<a class="a-link" href="${esc(n.url2)}" target="_blank" rel="noopener">${esc(n.url2Label || "詳しく見る②")} →</a>`);
+  if(n.url3) links.push(`<a class="a-link" href="${esc(n.url3)}" target="_blank" rel="noopener">${esc(n.url3Label || "詳しく見る③")} →</a>`);
+  // 旧形式（link.url / link.label）との後方互換
+  if(!links.length && n.link && n.link.url) links.push(`<a class="a-link" href="${esc(n.link.url)}" target="_blank" rel="noopener">${esc(n.link.label||"詳しく見る")} →</a>`);
+  const link = links.length ? `<div class="a-links">${links.join("")}</div>` : "";
   box.innerHTML = `
     <div class="a-head"><span class="a-tag">${esc(n.tag||"お知らせ")}</span>${date}</div>
     <h1 class="a-title">${esc(n.title||"")}</h1>
-    <div class="a-body">${esc(n.body||"")}</div>
-    ${images}
+    ${bodyHtml}
     ${video}
     ${link}
     <div class="a-foot"><a class="back" href="index.html#oshirase">← お知らせ一覧へ戻る</a></div>
