@@ -1,9 +1,17 @@
 {
   "media": [
     {
+      "body": "誰も守ってくれなかった—\n捨てられ、飢え、自殺の淵を越えた僕が、\n「身体の真実」に辿り着くまで\n\n哲学・信念・物語を発信する\nIKIGAI JAPANで加藤師範のインタビューが掲載されました。\n",
+      "url2": "https://ikigaijapan-neo.com/ikigai-interview/906/",
+      "urlLabel": "前編",
+      "blocks": [],
+      "url": "https://ikigaijapan-neo.com/ikigai-interview/636/",
+      "url2Label": "後編",
       "kind": "WEB記事",
-      "title": "加藤師範インタビュー（IKIGAI JAPAN）前半",
-      "url": "https://ikigaijapan-neo.com/ikigai-interview/636/"
+      "title": "加藤師範インタビュー（IKIGAI JAPAN）前半・後半",
+      "images": [
+        "/images/無題167_20260707034825.jpeg"
+      ]
     },
     {
       "kind": "Yahoo!ニュース",
@@ -196,7 +204,7 @@
       "important": true,
       "tag": "重要",
       "title": "「靭トレ」および「縄結い」の認定と提供について",
-      "body": "",
+      "body": "「靭トレ」および「縄結い」の認定と提供について",
       "images": [
         "/images/5f9a0048-c6b5-4596-bb33-47f078c6d313.png"
       ]
@@ -318,7 +326,8 @@
           "label": "Amazon",
           "url": "https://amzn.asia/d/0je7TVln"
         }
-      ]
+      ],
+      "tag": "DVD"
     },
     {
       "title": "靭トレ入門",
