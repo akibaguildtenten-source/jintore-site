@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メディア掲載 | 靭トレ協会</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ffffff;--paper-2:#f1f5f9;--paper-3:#f8fafc;
+  --sumi:#141414;--sumi-soft:#54606b;--line:#e2e8ef;
+  --shu:#1f5c9e;--shu-deep:#143f6e;--maxw:820px;
+  --disp:"Noto Sans JP",sans-serif;--body:"Noto Sans JP",sans-serif;--mono:"Roboto Mono",monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--sumi);font-family:var(--body);line-height:1.85;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+header.site{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:10}
+header .nav{display:flex;align-items:center;gap:16px;height:62px}
+.brand{font-family:var(--disp);font-weight:900;font-size:19px;color:var(--sumi);text-decoration:none;letter-spacing:.04em}
+header .sp{flex:1}
+.nav a.link{font-size:13.5px;color:var(--sumi-soft);text-decoration:none}
+.nav a.link:hover{color:var(--shu)}
+main{padding:34px 0 60px}
+.back{display:inline-block;font-family:var(--mono);font-size:12.5px;color:var(--shu);text-decoration:none;margin-bottom:20px}
+.back:hover{text-decoration:underline}
+.a-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.a-tag{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--shu);padding:4px 10px;border-radius:2px}
+h1.a-title{font-family:var(--disp);font-weight:900;font-size:clamp(22px,4vw,30px);line-height:1.5;margin:0 0 22px}
+.a-body{font-size:15.5px;line-height:2;color:#2b3138;white-space:pre-wrap;word-break:break-word}
+.a-images{display:grid;gap:14px;margin:24px 0}
+.a-images img{width:100%;max-height:560px;object-fit:contain;border-radius:8px;border:1px solid var(--line);background:var(--paper-2);display:block}
+.media-video{width:100%;border-radius:8px;margin:20px 0 0;border:1px solid var(--line);display:block}
+.media-embed{position:relative;width:100%;aspect-ratio:16/9;margin:20px 0 0;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#000}
+.media-embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.a-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.a-link{display:inline-block;background:var(--shu);color:#fff;text-decoration:none;font-weight:700;font-size:14px;padding:12px 24px;border-radius:3px}
+.a-link:hover{background:var(--shu-deep)}
+.a-foot{margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.notfound{padding:60px 0;text-align:center;color:var(--sumi-soft)}
+footer.site{border-top:1px solid var(--line);padding:26px 0;margin-top:20px}
+footer .brand2{font-family:var(--disp);font-weight:900;font-size:15px}
+footer p{font-size:12px;color:var(--sumi-soft);margin:8px 0 0}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a href="index.html" class="brand">靭トレ協会</a>
+    <span class="sp"></span>
+    <a href="index.html#media" class="link">メディア掲載一覧</a>
+    <a href="index.html" class="link">トップ</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <a class="back" href="index.html#media">← メディア掲載一覧へ戻る</a>
+    <div id="article"><p class="notfound">読み込み中…</p></div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="brand2">靭トレ協会</div>
+    <p>骨・靭帯を連動させる、からだ本来の動かし方。</p>
+  </div>
+</footer>
+
+<script>
+const esc = s => String(s==null?"":s).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+
+function videoEmbed(url, file){
+  if(file){ return `<video class="media-video" src="${esc(file)}" controls preload="metadata" playsinline></video>`; }
+  if(!url) return "";
+  const u = String(url).trim();
+  let m = u.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/)|youtu\.be\/)([A-Za-z0-9_-]{6,})/);
+  if(m){ return `<div class="media-embed"><iframe src="https://www.youtube.com/embed/${m[1]}" title="YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`; }
+  m = u.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if(m){ return `<div class="media-embed"><iframe src="https://player.vimeo.com/video/${m[1]}" title="Vimeo" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`; }
+  if(/\.(mp4|webm|ogg|mov)(\?.*)?$/i.test(u)){ return `<video class="media-video" src="${esc(u)}" controls preload="metadata" playsinline></video>`; }
+  return `<a class="a-link" href="${esc(u)}" target="_blank" rel="noopener">動画を見る →</a>`;
+}
+
+function getIndex(){
+  const p = new URLSearchParams(location.search);
+  const i = parseInt(p.get("i"), 10);
+  return isNaN(i) ? -1 : i;
+}
+
+function render(DATA){
+  const list = (DATA && DATA.media) || [];
+  const i = getIndex();
+  const m = (i>=0 && i<list.length) ? list[i] : null;
+  const box = document.getElementById("article");
+  if(!m){
+    box.innerHTML = `<div class="notfound">掲載情報が見つかりませんでした。<br><a class="back" href="index.html#media">メディア掲載一覧へ戻る</a></div>`;
+    return;
+  }
+  document.title = (m.title ? m.title + " | " : "") + "メディア掲載 | 靭トレ協会";
+  let imgs = [];
+  if(Array.isArray(m.images)) imgs = m.images.filter(Boolean);
+  imgs = imgs.slice(0,3);
+  const images = imgs.length ? `<div class="a-images">${imgs.map(src=>`<img src="${esc(src)}" alt="" loading="lazy">`).join("")}</div>` : "";
+  const video = videoEmbed(m.videoUrl, m.video);
+  const links = [];
+  if(m.url) links.push(`<a class="a-link" href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.urlLabel || "掲載元を見る①")} →</a>`);
+  if(m.url2) links.push(`<a class="a-link" href="${esc(m.url2)}" target="_blank" rel="noopener">${esc(m.url2Label || "掲載元を見る②")} →</a>`);
+  const linksHtml = links.length ? `<div class="a-links">${links.join("")}</div>` : "";
+  box.innerHTML = `
+    <div class="a-head">${m.kind ? `<span class="a-tag">${esc(m.kind)}</span>` : ""}</div>
+    <h1 class="a-title">${esc(m.title||"")}</h1>
+    <div class="a-body">${esc(m.body||"")}</div>
+    ${images}
+    ${video}
+    ${linksHtml}
+    <div class="a-foot"><a class="back" href="index.html#media">← メディア掲載一覧へ戻る</a></div>
+  `;
+}
+
+fetch("content.json",{cache:"no-store"})
+  .then(r=>r.json())
+  .then(render)
+  .catch(e=>{
+    console.error("content.json 読込失敗", e);
+    document.getElementById("article").innerHTML = `<div class="notfound">読み込みに失敗しました。<br><a class="back" href="index.html">トップへ戻る</a></div>`;
+  });
+</script>
+</body>
+</html>
