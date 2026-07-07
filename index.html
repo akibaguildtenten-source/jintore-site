@@ -558,8 +558,8 @@ $("#mediaList").innerHTML = DATA.media.map((m,i)=>{
 }).join("");
 
 /* NEWS */
-$("#newsList").innerHTML = DATA.news.map(n=>`
-  <a class="news-item" href="${esc(n.url)}" target="_blank" rel="noopener">
+$("#newsList").innerHTML = DATA.news.map((n,i)=>`
+  <a class="news-item" href="katsudo.html?i=${i}">
     <div class="date">${esc(n.date)}</div>
     <div class="title">${esc(n.title)}</div>
   </a>`).join("");
