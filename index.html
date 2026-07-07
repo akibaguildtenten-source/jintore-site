@@ -557,12 +557,16 @@ $("#mediaList").innerHTML = DATA.media.map((m,i)=>{
   return `<a class="media" href="media.html?i=${i}">${inner}</a>`;
 }).join("");
 
-/* NEWS */
-$("#newsList").innerHTML = DATA.news.map((n,i)=>`
-  <a class="news-item" href="katsudo.html?i=${i}">
+/* NEWS：本文ブロックがあれば詳細ページへ、無ければ以前通り外部URLへ直接 */
+$("#newsList").innerHTML = DATA.news.map((n,i)=>{
+  const hasBlocks = Array.isArray(n.blocks) && n.blocks.some(b=>b && b.text);
+  const href = hasBlocks ? `katsudo.html?i=${i}` : esc(n.url||"#");
+  const target = hasBlocks ? "" : ` target="_blank" rel="noopener"`;
+  return `<a class="news-item" href="${href}"${target}>
     <div class="date">${esc(n.date)}</div>
     <div class="title">${esc(n.title)}</div>
-  </a>`).join("");
+  </a>`;
+}).join("");
 
 /* SNS */
 $("#snsRow").innerHTML = DATA.sns.map(s=>`
