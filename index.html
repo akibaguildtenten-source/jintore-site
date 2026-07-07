@@ -552,11 +552,9 @@ $("#videoGrid").addEventListener("keydown", e=>{
 });
 
 /* メディア掲載 */
-$("#mediaList").innerHTML = DATA.media.map(m=>{
+$("#mediaList").innerHTML = DATA.media.map((m,i)=>{
   const inner = `<div class="k">${esc(m.kind)}</div><div class="m">${esc(m.title)}</div>`;
-  return m.url
-    ? `<a class="media" href="${esc(m.url)}" target="_blank" rel="noopener">${inner}</a>`
-    : `<div class="media" style="cursor:default">${inner}</div>`;
+  return `<a class="media" href="media.html?i=${i}">${inner}</a>`;
 }).join("");
 
 /* NEWS */
