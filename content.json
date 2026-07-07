@@ -16,7 +16,10 @@
     {
       "kind": "Yahoo!ニュース",
       "title": "FOOTBALL ZONE／中島選手と靭トレ",
-      "url": "https://share.google/WxAPTteFkyizcqRD4"
+      "url": "https://share.google/WxAPTteFkyizcqRD4",
+      "images": [
+        null
+      ]
     },
     {
       "kind": "雑誌",
@@ -32,6 +35,30 @@
       "kind": "書籍",
       "title": "「縄結いは覚醒の秘技」保江邦夫・神尾郁恵 著（明窓出版）に加藤師範について掲載",
       "url": ""
+    },
+    {
+      "kind": "雑誌",
+      "title": "■ 月刊秘伝　特別対談動画 天才ドリブラーが語る 「靭トレ」の必要性",
+      "blocks": [
+        {
+          "color": "navy",
+          "size": "normal",
+          "text": "「超意識ムーブの発動！靭トレでサッカーを克つ！！」\nワクワクを育む・届ける\n「神體道（じんたいどう）と蹴鞠人（けまりびと）」 \n",
+          "image": "/images/img_8398.jpeg"
+        },
+        {
+          "color": "normal",
+          "size": "normal",
+          "text": "■ 驚異の熱量\nピッチに立つ直前まで「靭トレ」\nプロの極限の世界で戦う中島選手は、\n今、誰よりも「靭トレ」の可能性を信じています。\n\n\n・週3回の継続的なトレーニング\n　多忙なシーズン中も欠かさず実施。\n\n\n・試合当日の朝6時から施術\n　試合前日はもちろん、当日の早朝から身体を整え、その足でスタジアムへ向かうという圧倒的な信頼を寄せています。\n\n\n「なぜ、そこまで『靭トレ』にこだわるのか？」\nその理由は、筋肉の限界を超えた「靭帯発動」\nによる超意識ムーブにあります。\n\n\n■ メディアも絶賛！「相手を置き去りにする」華麗なターン\n最新の試合で見せた、あの「マジうまい」と話題のターン。\n相手を翻弄し、チャンスを演出する軽やかな動きの裏側には、「靭トレ」による身体操作の進化がありました。 "
+        }
+      ],
+      "body": "\n日本屈指の天才ドリブラー中島翔哉選手が、\nなぜ今『靭トレ』を必要としているのか？\nその核心に迫る加藤師範との対談を、\nぜひ動画でチェックしてください。",
+      "images": [
+        "/images/img_8397.jpeg"
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=3abtbI0qMZ4",
+      "url": "https://x.com/jintore2727/status/2016762766775009535?s=61&t=4QkL8xkAUQNRjtQGUddYyQ",
+      "urlLabel": "日本屈指の天才ドリブラー 中島翔哉選手が、 なぜ今『靱トレ』を 必要としているのか？ その理由を動画でチェック！ こちらをクリック！"
     }
   ],
   "experienceUrl": "taiken.html",
@@ -154,6 +181,11 @@
   ],
   "taikenNews": [
     {
+      "date": "2022.04.24",
+      "title": "靭トレの理論が学べるマンガがInstagramで始まりました",
+      "url": "https://jintra.amebaownd.com/posts/33950324"
+    },
+    {
       "date": "案内",
       "pin": true,
       "title": "体験会・勉強会のご案内（お申し込みはこちら）",
@@ -178,11 +210,6 @@
       "date": "2025.03.11",
       "title": "【3/11更新】靭トレ大阪セミナー、大盛況にて終了いたしました！",
       "url": "https://jintra.amebaownd.com/posts/56438288"
-    },
-    {
-      "date": "2022.04.24",
-      "title": "靭トレの理論が学べるマンガがInstagramで始まりました",
-      "url": "https://jintra.amebaownd.com/posts/33950324"
     }
   ],
   "announcements": [
@@ -347,14 +374,37 @@
   ],
   "news": [
     {
+      "date": "2026.4.5",
+      "title": "『神體道』出版記念イベント 開催御礼",
+      "blocks": [
+        {
+          "color": "normal",
+          "size": "normal",
+          "text": "2026年4月5日（日）に開催されました『神體道』出版記念トーク＆ワークショップは、好評のうちに無事終了いたしました。\nご来場いただいた皆さまに、\n心より御礼申し上げます。\n当日の様子の一部として、参加者の方が動画を公開されています。\n※参加者の方による記録動画です",
+          "image": "/images/img_8399.png"
+        }
+      ],
+      "url": "https://www.youtube.com/watch?si=yNdhT94eeY1pPOQs&v=Nw6CQRqTxow&feature=youtu.be"
+    },
+    {
       "date": "2025.05.08",
       "title": "5月2日〜4日 靭トレ大阪セミナー、大盛況にて終了いたしました！",
       "url": "https://jintra.amebaownd.com/posts/56804001"
     },
     {
+      "date": "2022.04.24",
+      "title": "靭トレの理論が学べるマンガがInstagramで始まりました",
+      "url": "https://jintra.amebaownd.com/posts/33950324"
+    },
+    {
       "date": "2025.04.23",
       "title": "〜縄結による完全瞑想〜【追加開催決定】",
       "url": "https://jintra.amebaownd.com/posts/56725783"
+    },
+    {
+      "date": "2025.03.11",
+      "title": "【3/11更新】靭トレ大阪セミナー、大盛況にて終了いたしました！",
+      "url": "https://jintra.amebaownd.com/posts/56438288"
     }
   ],
   "sns": [
@@ -368,6 +418,10 @@
     }
   ],
   "videos": [
+    {
+      "id": "3abtbI0qMZ4",
+      "title": "【異次元プレーの秘密】ファンタジスタ中島翔哉（サッカー元日本代表）×「靭トレ」の身心革命“動きの源へ” Shoya Nakajima Talks Body Innovation in Football"
+    },
     {
       "id": "3abtbI0qMZ4",
       "title": "超意識ムーブの発動！靭トレでサッカーを克つ！！ ―神體道と蹴鞠人―"
@@ -505,8 +559,12 @@
       "title": "外力を使わず、相手の力を利用して崩す達人【靭トレ×合気道】"
     },
     {
-      "id": "_T9XUmR9qfU",
+      "id": "3abtbI0qMZ4",
       "title": "100％の力を出すには〇〇を使え！"
+    },
+    {
+      "id": "wFad1u1T0kk",
+      "title": "【神回】『神體道』  保江邦夫先生 加藤久弦先生　対談"
     }
   ],
   "lineUrl": "https://lin.ee/tXkV1pd"
