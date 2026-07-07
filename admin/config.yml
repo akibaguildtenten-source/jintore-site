@@ -63,16 +63,40 @@ collections:
                 max: 3
                 field: { label: "画像", name: "image", widget: "image" }
 
+              - label: "本文ブロック（任意・使うと上の「本文」より優先されます／画像を好きな位置に挟めます）"
+                name: "blocks"
+                widget: "list"
+                required: false
+                summary: "{{fields.text}}"
+                fields:
+                  - { label: "文章", name: "text", widget: "text", required: false }
+                  - label: "文字の色"
+                    name: "color"
+                    widget: "select"
+                    default: "normal"
+                    options:
+                      - { label: "通常（黒）", value: "normal" }
+                      - { label: "濃紺（強調）", value: "navy" }
+                      - { label: "朱色（強調）", value: "red" }
+                  - label: "文字の大きさ"
+                    name: "size"
+                    widget: "select"
+                    default: "normal"
+                    options:
+                      - { label: "標準", value: "normal" }
+                      - { label: "大きめ", value: "large" }
+                      - { label: "小さめ", value: "small" }
+                  - { label: "このブロックの後に置く画像（任意）", name: "image", widget: "image", required: false }
+
               - { label: "動画URL（YouTube/Vimeo・任意）", name: "videoUrl", widget: "string", required: false }
               - { label: "動画ファイル（任意）", name: "video", widget: "file", required: false }
 
-              - label: "リンク（任意）"
-                name: "link"
-                widget: "object"
-                required: false
-                fields:
-                  - { label: "表示名", name: "label", widget: "string", required: false }
-                  - { label: "URL", name: "url", widget: "string", required: false }
+              - { label: "リンクURL①（任意）", name: "url", widget: "string", required: false }
+              - { label: "リンクURL①の表示名（任意）", name: "urlLabel", widget: "string", required: false }
+              - { label: "リンクURL②（任意）", name: "url2", widget: "string", required: false }
+              - { label: "リンクURL②の表示名（任意）", name: "url2Label", widget: "string", required: false }
+              - { label: "リンクURL③（任意）", name: "url3", widget: "string", required: false }
+              - { label: "リンクURL③の表示名（任意）", name: "url3Label", widget: "string", required: false }
 
           - label: "動画（YouTube）"
             name: "videos"
@@ -142,7 +166,31 @@ collections:
             fields:
               - { label: "日付（例：2025.05.08）", name: "date", widget: "string" }
               - { label: "タイトル", name: "title", widget: "string" }
-              - { label: "リンクURL", name: "url", widget: "string" }
+              - { label: "リンクURL（外部サイトがある場合・任意）", name: "url", widget: "string", required: false }
+              - label: "本文ブロック（任意・画像を好きな位置に挟めます）"
+                name: "blocks"
+                widget: "list"
+                required: false
+                summary: "{{fields.text}}"
+                fields:
+                  - { label: "文章", name: "text", widget: "text", required: false }
+                  - label: "文字の色"
+                    name: "color"
+                    widget: "select"
+                    default: "normal"
+                    options:
+                      - { label: "通常（黒）", value: "normal" }
+                      - { label: "濃紺（強調）", value: "navy" }
+                      - { label: "朱色（強調）", value: "red" }
+                  - label: "文字の大きさ"
+                    name: "size"
+                    widget: "select"
+                    default: "normal"
+                    options:
+                      - { label: "標準", value: "normal" }
+                      - { label: "大きめ", value: "large" }
+                      - { label: "小さめ", value: "small" }
+                  - { label: "このブロックの後に置く画像（任意）", name: "image", widget: "image", required: false }
 
           - label: "メディア掲載"
             name: "media"
@@ -160,6 +208,30 @@ collections:
                 required: false
                 max: 3
                 field: { label: "画像", name: "image", widget: "image" }
+              - label: "本文ブロック（任意・使うと上の「本文」より優先されます／画像を好きな位置に挟めます）"
+                name: "blocks"
+                widget: "list"
+                required: false
+                summary: "{{fields.text}}"
+                fields:
+                  - { label: "文章", name: "text", widget: "text", required: false }
+                  - label: "文字の色"
+                    name: "color"
+                    widget: "select"
+                    default: "normal"
+                    options:
+                      - { label: "通常（黒）", value: "normal" }
+                      - { label: "濃紺（強調）", value: "navy" }
+                      - { label: "朱色（強調）", value: "red" }
+                  - label: "文字の大きさ"
+                    name: "size"
+                    widget: "select"
+                    default: "normal"
+                    options:
+                      - { label: "標準", value: "normal" }
+                      - { label: "大きめ", value: "large" }
+                      - { label: "小さめ", value: "small" }
+                  - { label: "このブロックの後に置く画像（任意）", name: "image", widget: "image", required: false }
               - { label: "動画URL（YouTube/Vimeo・任意）", name: "videoUrl", widget: "string", required: false }
               - { label: "動画ファイル（任意）", name: "video", widget: "file", required: false }
               - { label: "リンクURL①（任意）", name: "url", widget: "string", required: false }
