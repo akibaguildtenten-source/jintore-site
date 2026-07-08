@@ -14,14 +14,6 @@
       ]
     },
     {
-      "kind": "Yahoo!ニュース",
-      "title": "FOOTBALL ZONE／中島選手と靭トレ",
-      "url": "https://share.google/WxAPTteFkyizcqRD4",
-      "images": [
-        null
-      ]
-    },
-    {
       "kind": "雑誌",
       "title": "月刊「ザ・フナイ」vol.214（2025年8月号）加藤師範インタビュー掲載",
       "url": "",
@@ -239,6 +231,64 @@
   ],
   "announcements": [
     {
+      "tag": "動画公開",
+      "date": "2026.7.5",
+      "title": "YouTube「角由紀子のヤバイ帝国」に 靭トレ・加藤師範が出演しました！",
+      "body": "不思議系ウェブサイト「TOCANA」元編集長・角由紀子さんのYouTubeチャンネル「角由紀子のヤバイ帝国」（登録者45万人）に加藤師範が出演しました。カラダの仕組み、感覚の世界、そしてまだ多くの人が気づいていないカラダの可能性について、前編公開されました。",
+      "link": {
+        "label": "チャンネルを見る",
+        "url": "https://youtu.be/6I25-ZQMXOc?si=uXD14sZ9Y6EzgQxJ"
+      },
+      "important": true,
+      "images": [
+        "/images/5425b97d-8f7c-4a48-95ec-a670a2f57d5b.png"
+      ],
+      "videoUrl": "https://youtu.be/6I25-ZQMXOc?si=uXD14sZ9Y6EzgQxJ"
+    },
+    {
+      "important": true,
+      "tag": "新刊書籍",
+      "date": "2026.7.6",
+      "title": "「靱トレ｜首・肩・腰が軽くなる本」 Kindle版",
+      "body": "がんばらずに動きやすさが戻る「カラダの条件」\n「動けない」のは、筋力や年齢のせいではないかもしれません。\n本来のカラダを思い出すための一冊です。\n\n新作出来ました\n今回は、靭トレ・キャラクターの\n【なびサン】です\n元々ビスケットのなびサンは、子どもに食べられず落とされてしまい　潰される間際に空を飛ぶ奴凧に憧れて復活した動物ビスケットの妖精だよ　\nナビだから観たものや電波を拾って突然飛び出すよ　あとビックリした時だけ靭帯の力で飛べます　本人は本当に飛べてると思い込んでます\n今回は、表紙だけだけど徐々にイラスト集も出すよ",
+      "images": [
+        "/images/img_8340.jpeg"
+      ],
+      "link": {
+        "label": "Amazon",
+        "url": "https://www.amazon.co.jp/dp/B0H38CVCD3?ref=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&ref_=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&social_share=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&bestFormat=true"
+      }
+    },
+    {
+      "tag": "書籍",
+      "date": "2026.06.04",
+      "title": "『靭トレ｜一点に落ちる重さの地図』Kindle版 ",
+      "body": "待望の最新刊が解禁されました。「動きは、本当に自分で作っているのだろうか。」——「一点に落ちる重さ」を起点に、カラダを見つめ直す一冊です。ぜひお読み下さい。",
+      "link": {
+        "label": "Amazon",
+        "url": "https://www.amazon.co.jp/dp/B0H3WK5NXG"
+      },
+      "important": true,
+      "video": "",
+      "images": [
+        "/images/img_8146.jpeg"
+      ]
+    },
+    {
+      "important": false,
+      "link": {
+        "url": "https://ikigaijapan-neo.com/ikigai-interview/906/",
+        "label": "インタビュー後編はこちら"
+      },
+      "tag": "最新インタビュー",
+      "title": " IKIGAI JAPANで加藤師範のインタビュー後半が掲載されました",
+      "date": "2026.7.6",
+      "body": "誰も守ってくれなかった—\n捨てられ、飢え、自殺の淵を越えた僕が、\n「身体の真実」に辿り着くまで\n\n哲学・信念・物語を発信する\nIKIGAI JAPANで加藤師範のインタビューが掲載されました。",
+      "images": [
+        "/images/無題167_20260707034825.jpeg"
+      ]
+    },
+    {
       "important": true,
       "tag": "お知らせ",
       "title": "指導体制について",
@@ -259,64 +309,6 @@
       "body": "「靭トレ」および「縄結い」の認定と提供について",
       "images": [
         "/images/5f9a0048-c6b5-4596-bb33-47f078c6d313.png"
-      ]
-    },
-    {
-      "important": false,
-      "link": {
-        "url": "https://ikigaijapan-neo.com/ikigai-interview/906/",
-        "label": "インタビュー後編はこちら"
-      },
-      "tag": "最新インタビュー",
-      "title": " IKIGAI JAPANで加藤師範のインタビュー後半が掲載されました",
-      "date": "2026.7.6",
-      "body": "誰も守ってくれなかった—\n捨てられ、飢え、自殺の淵を越えた僕が、\n「身体の真実」に辿り着くまで\n\n哲学・信念・物語を発信する\nIKIGAI JAPANで加藤師範のインタビューが掲載されました。",
-      "images": [
-        "/images/無題167_20260707034825.jpeg"
-      ]
-    },
-    {
-      "important": true,
-      "tag": "新刊書籍",
-      "date": "2026.7.6",
-      "title": "「靱トレ｜首・肩・腰が軽くなる本」 Kindle版",
-      "body": "がんばらずに動きやすさが戻る「カラダの条件」\n「動けない」のは、筋力や年齢のせいではないかもしれません。\n本来のカラダを思い出すための一冊です。\n\n新作出来ました\n今回は、靭トレ・キャラクターの\n【なびサン】です\n元々ビスケットのなびサンは、子どもに食べられず落とされてしまい　潰される間際に空を飛ぶ奴凧に憧れて復活した動物ビスケットの妖精だよ　\nナビだから観たものや電波を拾って突然飛び出すよ　あとビックリした時だけ靭帯の力で飛べます　本人は本当に飛べてると思い込んでます\n今回は、表紙だけだけど徐々にイラスト集も出すよ",
-      "images": [
-        "/images/img_8340.jpeg"
-      ],
-      "link": {
-        "label": "Amazon",
-        "url": "https://www.amazon.co.jp/dp/B0H38CVCD3?ref=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&ref_=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&social_share=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&bestFormat=true"
-      }
-    },
-    {
-      "tag": "動画公開",
-      "date": "2026.7.5",
-      "title": "YouTube「角由紀子のヤバイ帝国」に 靭トレ・加藤師範が出演しました！",
-      "body": "不思議系ウェブサイト「TOCANA」元編集長・角由紀子さんのYouTubeチャンネル「角由紀子のヤバイ帝国」（登録者45万人）に加藤師範が出演しました。カラダの仕組み、感覚の世界、そしてまだ多くの人が気づいていないカラダの可能性について、前編公開されました。",
-      "link": {
-        "label": "チャンネルを見る",
-        "url": "https://youtu.be/6I25-ZQMXOc?si=uXD14sZ9Y6EzgQxJ"
-      },
-      "important": true,
-      "images": [
-        "/images/5425b97d-8f7c-4a48-95ec-a670a2f57d5b.png"
-      ],
-      "videoUrl": "https://youtu.be/6I25-ZQMXOc?si=uXD14sZ9Y6EzgQxJ"
-    },
-    {
-      "tag": "書籍",
-      "date": "2026.06.04",
-      "title": "『靭トレ｜一点に落ちる重さの地図』Kindle版 ",
-      "body": "待望の最新刊が解禁されました。「動きは、本当に自分で作っているのだろうか。」——「一点に落ちる重さ」を起点に、カラダを見つめ直す一冊です。ぜひお読み下さい。",
-      "link": {
-        "label": "Amazon",
-        "url": "https://www.amazon.co.jp/dp/B0H3WK5NXG"
-      },
-      "important": true,
-      "video": "",
-      "images": [
-        "/images/img_8146.jpeg"
       ]
     }
   ],
@@ -449,10 +441,6 @@
     }
   ],
   "videos": [
-    {
-      "id": "3abtbI0qMZ4",
-      "title": "【異次元プレーの秘密】ファンタジスタ中島翔哉（サッカー元日本代表）×「靭トレ」の身心革命“動きの源へ” Shoya Nakajima Talks Body Innovation in Football"
-    },
     {
       "id": "3abtbI0qMZ4",
       "title": "超意識ムーブの発動！靭トレでサッカーを克つ！！ ―神體道と蹴鞠人―"
