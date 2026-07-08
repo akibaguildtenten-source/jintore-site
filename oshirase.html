@@ -125,25 +125,26 @@ function render(DATA){
   document.title = (n.title ? n.title + " | " : "") + "お知らせ | 靭トレ協会";
   const date = n.date ? `<span class="a-date">${esc(n.date)}</span>` : "";
 
-  // 本文ブロック（新形式）。あれば優先し、画像を各ブロックの後に配置
-  let bodyHtml = "";
+  // 本文＋画像（上段）と 本文ブロック（下段）の両方を表示
+  let imgs = [];
+  if(Array.isArray(n.images)) imgs = n.images.filter(Boolean);
+  else if(n.image) imgs = [n.image];
+  imgs = imgs.slice(0,3);
+  const images = imgs.length ? `<div class="a-images">${imgs.map(src=>`<img src="${esc(src)}" alt="" loading="lazy">`).join("")}</div>` : "";
+  const legacyBody = n.body ? `<div class="a-body">${esc(n.body)}</div>` : "";
+
+  let blocksHtml = "";
   if(Array.isArray(n.blocks) && n.blocks.length){
-    bodyHtml = n.blocks.map(function(b){
+    blocksHtml = n.blocks.map(function(b){
       const color = ["normal","navy","red"].includes(b.color) ? b.color : "normal";
       const size = ["normal","large","small"].includes(b.size) ? b.size : "normal";
       const text = b.text ? `<div class="blk blk-color-${color} blk-size-${size}">${esc(b.text)}</div>` : "";
       const img = b.image ? `<img class="blk-img" src="${esc(b.image)}" alt="" loading="lazy">` : "";
       return text + img;
     }).join("");
-  } else {
-    // 旧形式：本文＋画像（最大3枚）
-    let imgs = [];
-    if(Array.isArray(n.images)) imgs = n.images.filter(Boolean);
-    else if(n.image) imgs = [n.image];
-    imgs = imgs.slice(0,3);
-    const images = imgs.length ? `<div class="a-images">${imgs.map(src=>`<img src="${esc(src)}" alt="" loading="lazy">`).join("")}</div>` : "";
-    bodyHtml = `<div class="a-body">${esc(n.body||"")}</div>${images}`;
   }
+
+  const bodyHtml = legacyBody + images + blocksHtml;
 
   const video = videoEmbed(n.videoUrl, n.video);
   const links = [];
