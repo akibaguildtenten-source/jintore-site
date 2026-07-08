@@ -120,22 +120,24 @@ function render(DATA){
   }
   document.title = (m.title ? m.title + " | " : "") + "メディア掲載 | 靭トレ協会";
 
-  let bodyHtml = "";
+  let imgs = [];
+  if(Array.isArray(m.images)) imgs = m.images.filter(Boolean);
+  imgs = imgs.slice(0,3);
+  const images = imgs.length ? `<div class="a-images">${imgs.map(src=>`<img src="${esc(src)}" alt="" loading="lazy">`).join("")}</div>` : "";
+  const legacyBody = m.body ? `<div class="a-body">${esc(m.body)}</div>` : "";
+
+  let blocksHtml = "";
   if(Array.isArray(m.blocks) && m.blocks.length){
-    bodyHtml = m.blocks.map(function(b){
+    blocksHtml = m.blocks.map(function(b){
       const color = ["normal","navy","red"].includes(b.color) ? b.color : "normal";
       const size = ["normal","large","small"].includes(b.size) ? b.size : "normal";
       const text = b.text ? `<div class="blk blk-color-${color} blk-size-${size}">${esc(b.text)}</div>` : "";
       const img = b.image ? `<img class="blk-img" src="${esc(b.image)}" alt="" loading="lazy">` : "";
       return text + img;
     }).join("");
-  } else {
-    let imgs = [];
-    if(Array.isArray(m.images)) imgs = m.images.filter(Boolean);
-    imgs = imgs.slice(0,3);
-    const images = imgs.length ? `<div class="a-images">${imgs.map(src=>`<img src="${esc(src)}" alt="" loading="lazy">`).join("")}</div>` : "";
-    bodyHtml = `<div class="a-body">${esc(m.body||"")}</div>${images}`;
   }
+
+  const bodyHtml = legacyBody + images + blocksHtml;
 
   const video = videoEmbed(m.videoUrl, m.video);
   const links = [];
