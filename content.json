@@ -310,6 +310,25 @@
       "images": [
         "/images/5f9a0048-c6b5-4596-bb33-47f078c6d313.png"
       ]
+    },
+    {
+      "important": true,
+      "date": "",
+      "tag": "中島翔哉×靭トレ",
+      "title": "■ 月刊秘伝　特別対談動画 天才ドリブラーが語る 「靭トレ」の必要性",
+      "images": [
+        "/images/img_8398.jpeg",
+        "/images/img_8397.jpeg"
+      ],
+      "body": "「超意識ムーブの発動！靭トレでサッカーを克つ！！」\nワクワクを育む・届ける\n「神體道（じんたいどう）と蹴鞠人（けまりびと）」",
+      "blocks": [
+        {
+          "color": "red",
+          "size": "normal",
+          "text": "日本屈指の天才ドリブラー中島翔哉選手が、\nなぜ今『靭トレ』を必要としているのか？\nその核心に迫る加藤師範との対談を、\nぜひ動画でチェックしてください。"
+        }
+      ],
+      "videoUrl": "https://www.youtube.com/watch?v=3abtbI0qMZ4"
     }
   ],
   "activities": [
