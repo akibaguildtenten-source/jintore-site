@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<link rel="icon" type="image/png" href="images/favicon.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T84CVQJHX5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T84CVQJHX5');
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>体験したい方へ | 靭トレ協会</title>
@@ -120,6 +131,12 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
 
 <section>
   <div class="wrap">
+    <img src="images/taiken-fee-table.jpeg" alt="体験セミナー料金（複数名参加型）" style="max-width:100%;height:auto;display:block;margin:0 auto;border-radius:8px;border:1px solid var(--line, #e2e8ef)">
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <div class="contact">
       <div class="contact-cta">
         <h3>ご予約・お問い合わせ</h3>
@@ -167,16 +184,6 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
   </div>
 </section>
 
-<section class="bg-alt">
-  <div class="wrap">
-    <p class="eyebrow">INFORMATION</p>
-    <h2 class="sec-title">体験会・勉強会／お知らせ</h2>
-    <ul class="news-list" id="newsList"></ul>
-    <div style="margin-top:26px">
-      <a class="btn" style="width:auto;border:1px solid var(--sumi);color:var(--sumi)" href="https://jintra.amebaownd.com/posts/page/1?type=grid" target="_blank" rel="noopener">すべてのお知らせを見る →</a>
-    </div>
-  </div>
-</section>
 </main>
 
 <footer class="site">
@@ -188,14 +195,6 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
 
 <script>
 function boot(DATA){
-const NEWS = (DATA && DATA.taikenNews) || [];
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-document.getElementById("newsList").innerHTML = NEWS.map(n=>`
-  <li><a class="news-item" href="${esc(n.url)}" target="_blank" rel="noopener">
-    ${n.pin?'<span class="pin">ご案内</span><br>':''}
-    <span class="date">${esc(n.date)}</span>
-    <div class="title">${esc(n.title)}</div>
-  </a></li>`).join("");
 document.getElementById("yr").textContent=new Date().getFullYear();
 const mb=document.getElementById("menuBtn"),nl=document.getElementById("navLinks");
 mb.addEventListener("click",()=>nl.classList.toggle("open"));
