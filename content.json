@@ -283,6 +283,24 @@
       "tag": "中島翔哉×靭トレ"
     },
     {
+      "important": false,
+      "tag": "緊急告知",
+      "date": "2026.7.9",
+      "title": "YouTube「市村よしなり。」靭トレ・加藤師範出演決定！ コラボレーション撮影を行いました。",
+      "body": "",
+      "images": [
+        "/images/c22d271c-18d3-4a9a-8f5f-d5c414c997a3.png"
+      ],
+      "blocks": [
+        {
+          "color": "navy",
+          "size": "large",
+          "text": "YouTube「市村よしなり。」\nコラボレーション撮影を行いました。\n\n公開をお楽しみに！",
+          "image": "/images/img_8457.jpeg"
+        }
+      ]
+    },
+    {
       "important": true,
       "tag": "新刊書籍",
       "date": "2026.7.6",
@@ -295,21 +313,6 @@
         "label": "Amazon",
         "url": "https://www.amazon.co.jp/dp/B0H38CVCD3?ref=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&ref_=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&social_share=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&bestFormat=true"
       }
-    },
-    {
-      "tag": "書籍",
-      "date": "2026.06.04",
-      "title": "『靭トレ｜一点に落ちる重さの地図』Kindle版 ",
-      "body": "待望の最新刊が解禁されました。「動きは、本当に自分で作っているのだろうか。」——「一点に落ちる重さ」を起点に、カラダを見つめ直す一冊です。ぜひお読み下さい。",
-      "link": {
-        "label": "Amazon",
-        "url": "https://www.amazon.co.jp/dp/B0H3WK5NXG"
-      },
-      "important": true,
-      "video": "",
-      "images": [
-        "/images/img_8146.jpeg"
-      ]
     },
     {
       "important": false,
