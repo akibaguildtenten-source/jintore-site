@@ -294,7 +294,7 @@
       "tag": "緊急告知",
       "date": "2026.7.9",
       "title": "YouTube「市村よしなり。」靭トレ・加藤師範出演決定！ コラボレーション撮影を行いました。",
-      "body": "",
+      "body": "　",
       "images": [
         "/images/c22d271c-18d3-4a9a-8f5f-d5c414c997a3.png"
       ],
@@ -353,6 +353,12 @@
       "images": [
         "/images/5f9a0048-c6b5-4596-bb33-47f078c6d313.png"
       ]
+    },
+    {
+      "important": false,
+      "tag": "テスト",
+      "title": "テスト",
+      "body": "テスト"
     }
   ],
   "activities": [
