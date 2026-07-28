@@ -232,6 +232,25 @@
   "announcements": [
     {
       "important": false,
+      "tag": "緊急告知",
+      "date": "2026.7.29",
+      "title": "YouTube「市村よしなり。」に靭トレ・加藤師範が出演いたしました。",
+      "body": "　",
+      "images": [
+        "/images/50998aee-e2bf-4775-9af7-ee14bf64b162.png"
+      ],
+      "blocks": [
+        {
+          "color": "navy",
+          "size": "large",
+          "text": "YouTube「市村よしなり。」\nコラボレーション撮影を行いました。\n\n公開をお楽しみに！",
+          "image": "/images/img_8457.jpeg"
+        }
+      ],
+      "videoUrl": "https://youtu.be/QLXtVP4SXvE?si=p4hP4VgrkTDpXh3j"
+    },
+    {
+      "important": false,
       "images": [
         "/images/d86c3c54-a2f9-487f-b555-017754642209.png"
       ],
@@ -288,24 +307,6 @@
         "/images/img_8398.jpeg"
       ],
       "tag": "中島翔哉×靭トレ"
-    },
-    {
-      "important": false,
-      "tag": "緊急告知",
-      "date": "2026.7.9",
-      "title": "YouTube「市村よしなり。」靭トレ・加藤師範出演決定！ コラボレーション撮影を行いました。",
-      "body": "　",
-      "images": [
-        "/images/c22d271c-18d3-4a9a-8f5f-d5c414c997a3.png"
-      ],
-      "blocks": [
-        {
-          "color": "navy",
-          "size": "large",
-          "text": "YouTube「市村よしなり。」\nコラボレーション撮影を行いました。\n\n公開をお楽しみに！",
-          "image": "/images/img_8457.jpeg"
-        }
-      ]
     },
     {
       "important": true,
@@ -484,6 +485,14 @@
     }
   ],
   "videos": [
+    {
+      "id": "QLXtVP4SXvE&ra=m",
+      "title": "【※神回】常識を覆す「エネルギー循環」のメカニズム(ゲスト：加藤 久弦先生)"
+    },
+    {
+      "id": "6I25-ZQMXOc&pp=iggCQAE%3D&ra=m",
+      "title": "宇宙から教わった「人体の本当の仕組み」1年8ヶ月断食した格闘家・加藤久弦の証言"
+    },
     {
       "id": "3abtbI0qMZ4",
       "title": "超意識ムーブの発動！靭トレでサッカーを克つ！！ ―神體道と蹴鞠人―"
