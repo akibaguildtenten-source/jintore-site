@@ -1,16 +1,6 @@
 {
   "media": [
     {
-      "title": " IKIGAI JAPANで加藤師範のインタビュー後半が掲載されました",
-      "kind": "WEB記事",
-      "body": "誰も守ってくれなかった—\n捨てられ、飢え、自殺の淵を越えた僕が、\n「身体の真実」に辿り着くまで\n\n哲学・信念・物語を発信する\nIKIGAI JAPANで加藤師範のインタビューが掲載されました。",
-      "images": [
-        "/images/無題167_20260707034825.jpeg"
-      ],
-      "url": "https://ikigaijapan-neo.com/ikigai-interview/906/",
-      "urlLabel": "インタビュー後編はこちら→"
-    },
-    {
       "body": "誰も守ってくれなかった—\n捨てられ、飢え、自殺の淵を越えた僕が、\n「身体の真実」に辿り着くまで\n\n哲学・信念・物語を発信する\nIKIGAI JAPANで加藤師範のインタビューが掲載されました。\n",
       "url2": "https://ikigaijapan-neo.com/ikigai-interview/906/",
       "urlLabel": "前編",
@@ -256,6 +246,18 @@
   "announcements": [
     {
       "important": false,
+      "tag": "新刊書籍",
+      "date": "2026.8.31",
+      "title": "神體道｜わたしの歩いてきた道",
+      "body": "新刊書籍が発売されました\n\nKindle電子書籍『神體道』シリーズ\n『神體道｜わたしの歩いてきた道』\n\n1年8ヶ月の断食、瞑想、アカシックレコードと呼ばれる体験。\n\n自分のカラダと向き合い、問い続けるなかで、加藤久弦は何を経験し、現在の「神體道」へとたどり着いたのか。\n\nこれまで別々に見えていた出来事が、長い年月を経て一つにつながっていく——。\n\n靭トレ協会主宰・加藤久弦が、自らの歩いてきた道を初めて綴った一冊です。\n",
+      "images": [
+        "/images/img_0705.jpeg"
+      ],
+      "url": "https://amzn.asia/d/0eISZ8sT",
+      "urlLabel": "Amazon"
+    },
+    {
+      "important": false,
       "tag": "動画公開",
       "date": "2026.8.9",
       "title": "YouTube「角由紀子のヤバイ帝国」 靱トレ協会主宰・加藤師範 出演回の後編が公開されました！",
@@ -356,20 +358,6 @@
         "label": "Amazon",
         "url": "https://www.amazon.co.jp/dp/B0H38CVCD3?ref=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&ref_=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&social_share=cm_sw_r_ffobk_cso_cp_mwn_dp_58YBFF71SVG19C09T53N&bestFormat=true"
       }
-    },
-    {
-      "important": false,
-      "link": {
-        "url": "https://ikigaijapan-neo.com/ikigai-interview/906/",
-        "label": "インタビュー後編はこちら"
-      },
-      "tag": "最新インタビュー",
-      "title": " IKIGAI JAPANで加藤師範のインタビュー後半が掲載されました",
-      "date": "2026.7.6",
-      "body": "誰も守ってくれなかった—\n捨てられ、飢え、自殺の淵を越えた僕が、\n「身体の真実」に辿り着くまで\n\n哲学・信念・物語を発信する\nIKIGAI JAPANで加藤師範のインタビューが掲載されました。",
-      "images": [
-        "/images/無題167_20260707034825.jpeg"
-      ]
     },
     {
       "important": true,
