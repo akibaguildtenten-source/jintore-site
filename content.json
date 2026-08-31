@@ -175,6 +175,20 @@
       "tag": "書籍"
     },
     {
+      "title": "神體道｜わたしの歩いてきた道",
+      "tag": "Kindle",
+      "price": "¥1,480",
+      "desc": "1年8ヶ月の断食、アカシックレコード、そしてカラダの真実 神體道シリーズ (ジンタイBooks)",
+      "img": "/images/img_0705.jpeg",
+      "links": [
+        {
+          "alt": false,
+          "label": "Amazon",
+          "url": "https://read.amazon.co.jp/sample/B0H687KQ23?clientId=share"
+        }
+      ]
+    },
+    {
       "img": "/images/img_8383.jpeg",
       "price": "¥1,650",
       "coverSub": "世界初の靭トレ書籍",
@@ -194,20 +208,6 @@
         }
       ],
       "tag": "書籍"
-    },
-    {
-      "title": "神體道｜わたしの歩いてきた道",
-      "tag": "Kindle",
-      "price": "¥1,480",
-      "desc": "1年8ヶ月の断食、アカシックレコード、そしてカラダの真実 神體道シリーズ (ジンタイBooks)",
-      "img": "/images/img_0705.jpeg",
-      "links": [
-        {
-          "alt": false,
-          "label": "Amazon",
-          "url": "https://read.amazon.co.jp/sample/B0H687KQ23?clientId=share"
-        }
-      ]
     }
   ],
   "taikenNews": [
