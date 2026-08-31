@@ -76,6 +76,20 @@
   "newsMoreUrl": "https://jintra.amebaownd.com/posts/page/1?type=grid",
   "books": [
     {
+      "title": "神體道｜わたしの歩いてきた道",
+      "tag": "Kindle",
+      "price": "¥1,480",
+      "desc": "1年8ヶ月の断食、アカシックレコード、そしてカラダの真実 神體道シリーズ (ジンタイBooks)",
+      "img": "/images/img_0705.jpeg",
+      "links": [
+        {
+          "alt": false,
+          "label": "Amazon",
+          "url": "https://read.amazon.co.jp/sample/B0H687KQ23?clientId=share"
+        }
+      ]
+    },
+    {
       "title": "靭トレ｜首・肩・腰が軽くなる本",
       "tag": "Kindle",
       "img": "/images/img_8340.jpeg",
@@ -173,20 +187,6 @@
         }
       ],
       "tag": "書籍"
-    },
-    {
-      "title": "神體道｜わたしの歩いてきた道",
-      "tag": "Kindle",
-      "price": "¥1,480",
-      "desc": "1年8ヶ月の断食、アカシックレコード、そしてカラダの真実 神體道シリーズ (ジンタイBooks)",
-      "img": "/images/img_0705.jpeg",
-      "links": [
-        {
-          "alt": false,
-          "label": "Amazon",
-          "url": "https://read.amazon.co.jp/sample/B0H687KQ23?clientId=share"
-        }
-      ]
     },
     {
       "img": "/images/img_8383.jpeg",
