@@ -246,6 +246,26 @@
   "announcements": [
     {
       "important": false,
+      "body": "",
+      "urlLabel": "note記事はこちら",
+      "blocks": [
+        {
+          "color": "normal",
+          "size": "normal",
+          "text": "靭トレをより深く、よりわかりやすく学べるnote有料記事の配信を開始しました。\n\n記事には、加藤師範による解説動画を収録。ここでしか見ることのできない限定動画を通して、靭トレの考え方や実践方法を丁寧にお伝えします。\n\n靭トレのオリジナルキャラクターたちと一緒に、楽しみながらカラダについて学べる内容です。\n\n今後は週2回の公開を予定しています。\nぜひご覧ください。",
+          "image": "/images/img_0990.jpeg"
+        }
+      ],
+      "date": "2026.9.10",
+      "url": "https://note.com/jintore_27/n/nd925ea5448ab",
+      "title": "唯一無二のトレーニング、靭トレの解説！",
+      "images": [
+        "/images/img_0989.jpeg"
+      ],
+      "tag": "note公開"
+    },
+    {
+      "important": false,
       "tag": "新刊書籍",
       "date": "2026.8.31",
       "title": "神體道｜わたしの歩いてきた道",
