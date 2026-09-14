@@ -247,7 +247,8 @@
     {
       "important": false,
       "body": "ここでしか見ることのできない限定動画を通して、靭トレの考え方や実践方法を丁寧にお伝えします。\n",
-      "urlLabel": "note記事はこちら",
+      "url2": "https://note.com/jintore_27",
+      "urlLabel": "最新note記事はこちら",
       "blocks": [
         {
           "color": "normal",
@@ -256,13 +257,14 @@
           "image": "/images/img_0990.jpeg"
         }
       ],
-      "date": "2026.9.10",
-      "url": "https://note.com/jintore_27/n/nd925ea5448ab",
-      "title": "唯一無二のトレーニング、靭トレの解説！",
+      "date": "2026.9.13",
+      "url": "https://note.com/jintore_27/n/nec87a1f2ad90",
+      "url2Label": "靭トレnote記事全て見たい方はこちら",
+      "title": "【第3話公開！】唯一無二のトレーニング、靭トレの解説！",
       "images": [
         "/images/img_0989.jpeg"
       ],
-      "tag": "note公開"
+      "tag": "note"
     },
     {
       "important": false,
