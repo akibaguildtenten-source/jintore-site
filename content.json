@@ -260,9 +260,21 @@
   "announcements": [
     {
       "important": false,
+      "tag": "新刊書籍",
+      "date": "2026.11.1",
+      "title": "神體道｜受けていかす: カラダ・言葉・人生から学ぶ「受け身十段」",
+      "body": "『神體道｜受けていかす: カラダ・言葉・人生から学ぶ「受け身十段」』がKindleで発売開始！\n\n​身体の動きだけでなく、言葉や日々の出来事を「受けていかす」ための極意がここに。\n\n靱トレ協会主宰・加藤師範の限定動画入りです。",
+      "images": [
+        "/images/img_2385.jpeg"
+      ],
+      "url": "Amazon",
+      "urlLabel": "https://share.google/jKlHdD11GohdZPw53"
+    },
+    {
+      "important": false,
       "body": "ここでしか見ることのできない限定動画を通して、靭トレの考え方や実践方法を丁寧にお伝えします。\n",
-      "url2": "https://note.com/jintore_27",
-      "urlLabel": "最新note記事はこちら",
+      "url2": "",
+      "urlLabel": "note記事はこちら",
       "blocks": [
         {
           "color": "normal",
@@ -272,8 +284,8 @@
         }
       ],
       "date": "2026.10.3",
-      "url": "https://note.com/jintore_27/n/nc0fcd8cd5f74?sub_rt=share_b",
-      "url2Label": "靭トレnote記事全て見たい方はこちら",
+      "url": "https://note.com/jintore_27",
+      "url2Label": "",
       "title": "【毎週(月)(金)更新🆙】唯一無二のトレーニング、靭トレの解説！",
       "images": [
         "/images/img_0998.jpeg"
