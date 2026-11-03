@@ -594,6 +594,42 @@
           "size": "normal"
         }
       ]
+    },
+    {
+      "id": "old-video-eTXcI5F4FP4",
+      "status": "published",
+      "title": "正しい姿勢がカラダを壊す。  自衛隊の常識が実は...でも...、  「体の声を聞きたい」",
+      "date": "",
+      "sourceUrl": "https://jintra.amebaownd.com/",
+      "blocks": [
+        {
+          "text": "旧ホームページに掲載されていた動画の記録です。\n現在は投稿者によってYouTubeから削除されており、視聴できません。\n当時の公開日は確認できないため記載していません。",
+          "color": "normal",
+          "size": "normal"
+        },
+        {
+          "linkUrl": "https://www.youtube.com/watch?v=eTXcI5F4FP4",
+          "linkLabel": "元のYouTube動画（削除済み・現在は視聴できません）"
+        }
+      ]
+    },
+    {
+      "id": "old-video-8MfYLyxlCbg",
+      "status": "published",
+      "title": "境界を尊ぶ感性",
+      "date": "",
+      "sourceUrl": "https://jintra.amebaownd.com/",
+      "blocks": [
+        {
+          "text": "旧ホームページに掲載されていた動画の記録です。\n現在は投稿者によってYouTubeから削除されており、視聴できません。\n当時の公開日は確認できないため記載していません。",
+          "color": "normal",
+          "size": "normal"
+        },
+        {
+          "linkUrl": "https://www.youtube.com/watch?v=8MfYLyxlCbg",
+          "linkLabel": "元のYouTube動画（削除済み・現在は視聴できません）"
+        }
+      ]
     }
   ]
 }
