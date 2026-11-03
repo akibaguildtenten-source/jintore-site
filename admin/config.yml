@@ -42,14 +42,25 @@ collections:
         fields:
           - { label: "「体験したい方へ」リンク先", name: "experienceUrl", widget: "string" }
           - { label: "公式LINEのURL", name: "lineUrl", widget: "string" }
-          - { label: "「もっと見る」リンク先", name: "newsMoreUrl", widget: "string" }
+          - { label: "「これまでの活動：もっと見る」リンク先", name: "newsMoreUrl", widget: "string" }
 
           - label: "お知らせ"
             name: "announcements"
             widget: "list"
             label_singular: "お知らせ"
-            summary: "{{fields.tag}}｜{{fields.title}}"
+            summary: "{{fields.status}}｜{{fields.tag}}｜{{fields.title}}"
             fields:
+              - { label: "記事ID", name: "id", widget: "hidden", required: false }
+              - { label: "旧URL番号", name: "legacyIndex", widget: "hidden", required: false }
+              - label: "掲載状態"
+                name: "status"
+                widget: "select"
+                default: "published"
+                hint: "トップから外すときは「アーカイブ」を選んで保存。リストから削除した公開済みのお知らせも、保存時にアーカイブとして残ります。非表示は画面上の非表示で、保存データへのアクセス制限ではありません。"
+                options:
+                  - { label: "掲載中", value: "published" }
+                  - { label: "アーカイブ（記事を残してトップから外す）", value: "archived" }
+                  - { label: "非表示（一覧・記事に表示しない）", value: "hidden" }
               - { label: "ラベル（例：新刊書籍／緊急告知／重要）", name: "tag", widget: "string" }
               - { label: "日付・期間（任意）", name: "date", widget: "string", required: false }
               - { label: "タイトル", name: "title", widget: "string" }
@@ -272,3 +283,43 @@ collections:
             fields:
               - { label: "表示名", name: "label", widget: "string" }
               - { label: "URL", name: "url", widget: "string" }
+
+
+      - name: "archive-content"
+        label: "旧ホームページの記録"
+        file: "archive.json"
+        description: "旧HPの文章・画像を新サイトに保存した記録です。当時の掲載日は変更せず、現在のお知らせとは分けて管理します。"
+        fields:
+          - label: "旧ホームページの記録"
+            name: "records"
+            widget: "list"
+            label_singular: "記録"
+            summary: "{{fields.date}}｜{{fields.title}}"
+            fields:
+              - { label: "記事ID", name: "id", widget: "hidden", required: false }
+              - { label: "元の掲載日時", name: "originalPublishedAt", widget: "hidden", required: false }
+              - { label: "タイトル", name: "title", widget: "string" }
+              - { label: "当時の掲載日", name: "date", widget: "string", required: false, hint: "移した日ではなく元の記事の掲載日。日付が不明な記録は空欄のままにします。" }
+              - { label: "旧HPの掲載元URL", name: "sourceUrl", widget: "string", required: false }
+              - label: "掲載状態"
+                name: "status"
+                widget: "select"
+                default: "published"
+                hint: "非表示は画面上の非表示で、保存データへのアクセス制限ではありません。"
+                options:
+                  - { label: "公開", value: "published" }
+                  - { label: "非表示", value: "hidden" }
+              - label: "本文・写真・動画"
+                name: "blocks"
+                widget: "list"
+                required: false
+                summary: "{{fields.text}}"
+                fields:
+                  - { label: "文章", name: "text", widget: "text", required: false }
+                  - { label: "文字の色", name: "color", widget: "select", options: ["normal", "navy", "red"], default: "normal", required: false }
+                  - { label: "文字の大きさ", name: "size", widget: "select", options: ["normal", "large", "small"], default: "normal", required: false }
+                  - { label: "画像", name: "image", widget: "image", required: false }
+                  - { label: "画像の説明", name: "alt", widget: "string", required: false }
+                  - { label: "動画URL", name: "videoUrl", widget: "string", required: false }
+                  - { label: "関連リンク", name: "linkUrl", widget: "string", required: false }
+                  - { label: "リンク・動画の表示名", name: "linkLabel", widget: "string", required: false }

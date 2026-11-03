@@ -66,6 +66,7 @@ h1.a-title{font-family:var(--disp);font-weight:900;font-size:clamp(22px,4vw,30px
 footer.site{border-top:1px solid var(--line);padding:26px 0;margin-top:20px}
 footer .brand2{font-family:var(--disp);font-weight:900;font-size:15px}
 footer p{font-size:12px;color:var(--sumi-soft);margin:8px 0 0}
+.archive-note{background:var(--paper-2);padding:16px;border-left:3px solid var(--shu);font-size:14px;margin-bottom:24px}
 </style>
 </head>
 <body>
@@ -92,6 +93,7 @@ footer p{font-size:12px;color:var(--sumi-soft);margin:8px 0 0}
   </div>
 </footer>
 
+<script src="/archive-core.js"></script>
 <script>
 const esc = s => String(s==null?"":s).replace(/[&<>"']/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
 
@@ -115,14 +117,17 @@ function getIndex(){
 
 function render(DATA){
   const list = (DATA && DATA.announcements) || [];
-  const i = getIndex();
-  const n = (i>=0 && i<list.length) ? list[i] : null;
+  const found = JintoreArchive.resolveAnnouncement(list, location.search);
+  const n = found && JintoreArchive.publicItem(found) ? found : null;
   const box = document.getElementById("article");
   if(!n){
+    const meta = document.createElement("meta"); meta.name="robots"; meta.content="noindex"; document.head.appendChild(meta);
     box.innerHTML = `<div class="notfound">お知らせが見つかりませんでした。<br><a class="back" href="index.html#oshirase">お知らせ一覧へ戻る</a></div>`;
     return;
   }
   document.title = (n.title ? n.title + " | " : "") + "お知らせ | 靭トレ協会";
+  const canonical = document.createElement("link"); canonical.rel="canonical"; canonical.href="https://jintore-site.pages.dev" + JintoreArchive.announcementUrl(n); document.head.appendChild(canonical);
+  const archived = JintoreArchive.state(n) === "archived";
   const date = n.date ? `<span class="a-date">${esc(n.date)}</span>` : "";
 
   // 本文＋画像（上段）と 本文ブロック（下段）の両方を表示
@@ -157,10 +162,11 @@ function render(DATA){
   box.innerHTML = `
     <div class="a-head"><span class="a-tag">${esc(n.tag||"お知らせ")}</span>${date}</div>
     <h1 class="a-title">${esc(n.title||"")}</h1>
+    ${archived ? `<p class="archive-note">過去のお知らせです。開催日・受付状況などは掲載当時の情報です。<a href="/taiken">現在の体験案内はこちら</a></p>` : ""}
     ${bodyHtml}
     ${video}
     ${link}
-    <div class="a-foot"><a class="back" href="index.html#oshirase">← お知らせ一覧へ戻る</a></div>
+    <div class="a-foot"><a class="back" href="${archived ? "/archive?category=announcements" : "/#oshirase"}">← ${archived ? "過去のお知らせ" : "お知らせ一覧"}へ戻る</a></div>
   `;
 }
 
@@ -174,3 +180,4 @@ fetch("content.json",{cache:"no-store"})
 </script>
 </body>
 </html>
+

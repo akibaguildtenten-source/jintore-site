@@ -10,6 +10,8 @@
   <!-- Decap CMS 本体 -->
   <script src="https://unpkg.com/decap-cms@3.14.1/dist/decap-cms.js"></script>
 
+  <script src="/admin/archive-editor.js"></script>
+
   <!-- カスタムプレビュー（公開前に実サイトに近い見た目で確認できます） -->
   <script>
   (function init(){
@@ -83,6 +85,7 @@
           var im = imgsOf(n);
           return h("div", { className:"pv-card", key:i }, [
             h("div", { key:"hd" }, [
+              h("span", { className:"pv-tag", key:"status" }, ({published:"掲載中",archived:"アーカイブ",hidden:"非表示"})[n.status || "published"]),
               n.tag ? h("span", { className:"pv-tag", key:"t" }, n.tag) : null,
               n.date ? h("span", { className:"pv-date", key:"d" }, n.date) : null
             ]),
@@ -120,7 +123,27 @@
     });
 
     CMS.registerPreviewTemplate("content", Preview);
+    CMS.registerPreviewTemplate("archive-content", window.createClass({
+      render: function(){
+        var records = this.props.entry.getIn(["data", "records"]);
+        records = records ? records.toJS() : [];
+        var asset = this.props.getAsset;
+        return h("div", {}, records.map(function(r, i){
+          return h("div", {className:"pv-card", key:i}, [
+            h("div", {className:"pv-tag",key:"status"}, r.status === "hidden" ? "非表示" : "旧HPの記録"),
+            h("div", {className:"pv-date",key:"date"}, r.date || "日付不明"),
+            h("div", {className:"pv-title",key:"title"}, r.title),
+            (r.blocks || []).map(function(b,j){return h("div", {key:"b"+j}, [
+              b.text ? h("div", {className:"pv-body",key:"t"}, b.text) : null,
+              b.image ? h("img", {src:asset(b.image),alt:b.alt||"",key:"i"}) : null,
+              b.videoUrl || b.linkUrl ? h("div", {className:"pv-note",key:"l"}, b.videoUrl || b.linkUrl) : null
+            ]);})
+          ]);
+        }));
+      }
+    }));
   })();
   </script>
 </body>
 </html>
+

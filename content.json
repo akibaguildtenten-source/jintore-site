@@ -73,7 +73,7 @@
     }
   ],
   "experienceUrl": "taiken.html",
-  "newsMoreUrl": "https://jintra.amebaownd.com/posts/page/1?type=grid",
+  "newsMoreUrl": "/archive",
   "books": [
     {
       "title": "神體道｜受けていかす: カラダ・言葉・人生から学ぶ「受け身十段」 ",
@@ -282,7 +282,10 @@
         "/images/img_2385.jpeg"
       ],
       "url": "https://share.google/jKlHdD11GohdZPw53",
-      "urlLabel": "Amazon"
+      "urlLabel": "Amazon",
+      "id": "notice-001",
+      "legacyIndex": 0,
+      "status": "published"
     },
     {
       "important": false,
@@ -304,7 +307,10 @@
       "images": [
         "/images/img_0998.jpeg"
       ],
-      "tag": "note"
+      "tag": "note",
+      "id": "notice-002",
+      "legacyIndex": 1,
+      "status": "published"
     },
     {
       "important": false,
@@ -316,7 +322,10 @@
       "images": [
         "/images/img_1415.jpeg"
       ],
-      "urlLabel": "Amazon"
+      "urlLabel": "Amazon",
+      "id": "notice-003",
+      "legacyIndex": 2,
+      "status": "published"
     },
     {
       "important": false,
@@ -328,7 +337,10 @@
         "/images/img_0705.jpeg"
       ],
       "url": "https://amzn.asia/d/0eISZ8sT",
-      "urlLabel": "Amazon"
+      "urlLabel": "Amazon",
+      "id": "notice-004",
+      "legacyIndex": 3,
+      "status": "published"
     },
     {
       "important": false,
@@ -339,7 +351,10 @@
       "images": [
         "/images/73364111-e681-4c1f-a0bb-e3b41ae2235e.png"
       ],
-      "videoUrl": "https://m.youtube.com/watch?v=IrukoEOnPVQ&pp=0gcJCWgCo7VqN5tDiggCQAE%3D&ra=m"
+      "videoUrl": "https://m.youtube.com/watch?v=IrukoEOnPVQ&pp=0gcJCWgCo7VqN5tDiggCQAE%3D&ra=m",
+      "id": "notice-005",
+      "legacyIndex": 4,
+      "status": "published"
     },
     {
       "important": false,
@@ -358,7 +373,10 @@
           "image": "/images/img_8457.jpeg"
         }
       ],
-      "videoUrl": "https://youtu.be/QLXtVP4SXvE?si=p4hP4VgrkTDpXh3j"
+      "videoUrl": "https://youtu.be/QLXtVP4SXvE?si=p4hP4VgrkTDpXh3j",
+      "id": "notice-006",
+      "legacyIndex": 5,
+      "status": "published"
     },
     {
       "important": true,
@@ -384,7 +402,10 @@
       "images": [
         "/images/img_8398.jpeg"
       ],
-      "tag": "中島翔哉×靭トレ"
+      "tag": "中島翔哉×靭トレ",
+      "id": "notice-007",
+      "legacyIndex": 6,
+      "status": "published"
     },
     {
       "important": true,
@@ -394,7 +415,10 @@
       "image": "",
       "images": [
         "/images/ce49ec0e-9a82-4857-9264-9cf035ad0439.png"
-      ]
+      ],
+      "id": "notice-008",
+      "legacyIndex": 7,
+      "status": "published"
     },
     {
       "important": true,
@@ -403,7 +427,10 @@
       "body": "「靭トレ」および「縄結い」の認定と提供について",
       "images": [
         "/images/5f9a0048-c6b5-4596-bb33-47f078c6d313.png"
-      ]
+      ],
+      "id": "notice-009",
+      "legacyIndex": 8,
+      "status": "published"
     }
   ],
   "activities": [
@@ -501,22 +528,22 @@
     {
       "date": "2025.05.08",
       "title": "5月2日〜4日 靭トレ大阪セミナー、大盛況にて終了いたしました！",
-      "url": "https://jintra.amebaownd.com/posts/56804001"
+      "url": "/archive?id=old-56804001"
     },
     {
       "date": "2022.04.24",
       "title": "靭トレの理論が学べるマンガがInstagramで始まりました",
-      "url": "https://jintra.amebaownd.com/posts/33950324"
+      "url": "/archive?id=old-33950324"
     },
     {
       "date": "2025.04.23",
       "title": "〜縄結による完全瞑想〜【追加開催決定】",
-      "url": "https://jintra.amebaownd.com/posts/56725783"
+      "url": "/archive?id=old-56725783"
     },
     {
       "date": "2025.03.11",
       "title": "【3/11更新】靭トレ大阪セミナー、大盛況にて終了いたしました！",
-      "url": "https://jintra.amebaownd.com/posts/56438288"
+      "url": "/archive?id=old-56438288"
     },
     {
       "date": "2026",

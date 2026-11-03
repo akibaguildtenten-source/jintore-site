@@ -246,6 +246,7 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
       <li><a href="#books">書籍・DVD</a></li>
       <li><a href="#videos">動画</a></li>
       <li><a href="#news">これまでの活動</a></li>
+      <li><a href="/archive">アーカイブ</a></li>
       <li><a href="#info">協会情報</a></li>
     </ul>
     <a class="nav-cta" id="navExperience" href="#">体験したい方へ</a>
@@ -282,6 +283,7 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
     <p class="eyebrow">NEWS &amp; TOPICS</p>
     <h2 class="sec-title">お知らせ</h2>
     <div class="notice-list" id="noticeList"></div>
+    <p><a class="btn btn-ghost" href="/archive?category=announcements">過去のお知らせ →</a></p>
   </div>
 </section>
 
@@ -443,6 +445,7 @@ footer.site .brand{color:var(--paper);font-size:18px;text-decoration:none;displa
   </div>
 </footer>
 
+<script src="/archive-core.js"></script>
 <script>
 /* 中身（お知らせ・動画・書籍など）は content.json にあります（編集は /admin のCMS）。 */
 function boot(DATA){
@@ -491,13 +494,13 @@ function videoEmbed(url, file){
   return `<a class="buy" href="${esc(u)}" target="_blank" rel="noopener">動画を見る →</a>`;
 }
 
-$("#noticeList").innerHTML = DATA.announcements.map((n,i)=>{
+$("#noticeList").innerHTML = DATA.announcements.filter(n=>JintoreArchive.state(n)==="published").map((n,i)=>{
   const date = n.date ? `<span class="notice-date">${esc(n.date)}</span>` : "";
   const thumbSrc = (n.images && n.images[0]) ? n.images[0] : (n.image || "");
   const thumb = thumbSrc ? `<div class="notice-thumb"><img src="${esc(thumbSrc)}" alt="" loading="lazy"></div>` : "";
   const raw = (n.body||"").replace(/\s+/g," ").trim();
   const ex = raw.length>70 ? raw.slice(0,70)+"…" : raw;
-  return `<a class="notice notice-link${n.important?" important":""}" href="oshirase.html?i=${i}">
+  return `<a class="notice notice-link${n.important?" important":""}" href="${esc(JintoreArchive.announcementUrl(n))}">
     <div class="notice-body">
       <div class="notice-head"><span class="notice-tag">${esc(n.tag)}</span>${date}</div>
       <h3>${esc(n.title)}</h3>
@@ -594,3 +597,4 @@ fetch("content.json",{cache:"no-store"}).then(r=>r.json()).then(boot).catch(e=>{
 </script>
 </body>
 </html>
+
