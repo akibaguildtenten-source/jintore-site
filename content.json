@@ -274,18 +274,18 @@
   "announcements": [
     {
       "important": false,
-      "tag": "新刊書籍",
-      "date": "2026.11.1",
-      "title": "神體道｜受けていかす: カラダ・言葉・人生から学ぶ「受け身十段」",
       "body": "『神體道｜受けていかす: カラダ・言葉・人生から学ぶ「受け身十段」』がKindleで発売開始！\n\n​身体の動きだけでなく、言葉や日々の出来事を「受けていかす」ための極意がここに。\n\n靱トレ協会主宰・加藤師範の限定動画入りです。",
+      "urlLabel": "Amazon",
+      "legacyIndex": 0,
+      "date": "2026.11.1",
+      "url": "https://share.google/jKlHdD11GohdZPw53",
+      "status": "published",
+      "title": "神體道｜受けていかす: カラダ・言葉・人生から学ぶ「受け身十段」",
       "images": [
         "/images/img_2385.jpeg"
       ],
-      "url": "https://share.google/jKlHdD11GohdZPw53",
-      "urlLabel": "Amazon",
-      "id": "notice-001",
-      "legacyIndex": 0,
-      "status": "published"
+      "tag": "新刊書籍",
+      "id": "notice-001"
     },
     {
       "important": false,
@@ -300,71 +300,65 @@
           "image": "/images/img_0990.jpeg"
         }
       ],
+      "legacyIndex": 1,
       "date": "2026.10.3",
       "url": "https://note.com/jintore_27",
       "url2Label": "",
+      "status": "published",
       "title": "【毎週(月)(金)更新🆙】唯一無二のトレーニング、靭トレの解説！",
       "images": [
         "/images/img_0998.jpeg"
       ],
       "tag": "note",
-      "id": "notice-002",
-      "legacyIndex": 1,
-      "status": "published"
+      "id": "notice-002"
     },
     {
       "important": false,
-      "url": "https://amzn.asia/d/0d2Vc9uV",
-      "tag": "新刊書籍",
-      "date": "2026.10.1",
-      "title": "神體道｜やる修行でなく やらない修行で見えちゃった : 話さない、謝らない、観ない　三つの「やらない行」 ",
       "body": "新刊書籍が発売されました\n\nKindle電子書籍\n神體道｜やる修行でなく やらない修行で見えちゃった : 話さない、謝らない、観ない　三つの「やらない行」 \n神體道シリーズ (ジンタイBooks)\n\n本の概要\n話さない。\n謝らない。\n観ない。\n\n何かを身につけるのではなく、\nいつも当たり前にしていることを、あえてやめてみる。\n\n靱トレ協会主宰・加藤久弦が実際に行った、三つの「やらない行」。\n\n話さないことで見えてきたのは、\n言葉を使わなくても「伝わる」ということ。\n\n謝らないことで見えてきたのは、\n何気なく口にする「すみません」の奥にある、自分の反応。\n\nそして観ないことで、\n時間の感覚が変わり、音がそれまでとはまったく違うものとして現れはじめる。\n\nなぜ、そんなことをしたのか。\n\n何か特別な答えを知っていたわけではありません。\n\n「これをやれば、こうなる」という確信があったわけでもありません。\n\nただ、いつもやっていることを止めてみた。\n\nすると、自分で選んでいると思っていた言葉や行動が、いつの間にか「慣れ」や「条件反射」になっていたことに気づいていきます。\n\n「やってんだけど、やってないんだよ」\n\nカラダが勝手に反応する。\n言葉が勝手に出る。\nいつもの自分が、いつものように動いていく。\n\nでは、その「自分」とは何なのか。\n\n三つの行から話はやがて、\n「成り立ち」「共鳴」、そして「自分の希望は、本当に自分のものなのか」という問いへ進んでいきます。\n\n前著『神體道　わたしの歩いてきた道』で、自らのカラダを通して確かめてきた加藤久弦。\n\n本書では、何かを「やる」のではなく、\nやらないことで見えてきたものを綴ります。\n\n修行とは、何かを増やすことだけなのか。\n\n身につけることだけが、前へ進むことなのか。\n\n話さなかった。\n謝らなかった。\n観なかった。\n\nそして――\n\n見えちゃった。",
+      "urlLabel": "Amazon",
+      "legacyIndex": 2,
+      "date": "2026.10.1",
+      "url": "https://amzn.asia/d/0d2Vc9uV",
+      "status": "published",
+      "title": "神體道｜やる修行でなく やらない修行で見えちゃった : 話さない、謝らない、観ない　三つの「やらない行」 ",
       "images": [
         "/images/img_1415.jpeg"
       ],
-      "urlLabel": "Amazon",
-      "id": "notice-003",
-      "legacyIndex": 2,
-      "status": "published"
+      "tag": "新刊書籍",
+      "id": "notice-003"
     },
     {
       "important": false,
-      "tag": "新刊書籍",
-      "date": "2026.8.31",
-      "title": "神體道｜わたしの歩いてきた道",
       "body": "新刊書籍が発売されました\n\nKindle電子書籍『神體道』シリーズ\n『神體道｜わたしの歩いてきた道』\n\n1年8ヶ月の断食、瞑想、アカシックレコードと呼ばれる体験。\n\n自分のカラダと向き合い、問い続けるなかで、加藤久弦は何を経験し、現在の「神體道」へとたどり着いたのか。\n\nこれまで別々に見えていた出来事が、長い年月を経て一つにつながっていく——。\n\n靭トレ協会主宰・加藤久弦が、自らの歩いてきた道を初めて綴った一冊です。\n",
+      "urlLabel": "Amazon",
+      "legacyIndex": 3,
+      "date": "2026.8.31",
+      "url": "https://amzn.asia/d/0eISZ8sT",
+      "status": "archived",
+      "title": "神體道｜わたしの歩いてきた道",
       "images": [
         "/images/img_0705.jpeg"
       ],
-      "url": "https://amzn.asia/d/0eISZ8sT",
-      "urlLabel": "Amazon",
-      "id": "notice-004",
-      "legacyIndex": 3,
-      "status": "published"
+      "tag": "新刊書籍",
+      "id": "notice-004"
     },
     {
       "important": false,
-      "tag": "動画公開",
-      "date": "2026.8.9",
-      "title": "YouTube「角由紀子のヤバイ帝国」 靱トレ協会主宰・加藤師範 出演回の後編が公開されました！",
       "body": "今回は、身体のお話だけでなく\n「縄結い」についてもたっぷりお話しています。\n\n縄結いとは何なのか。\n身体とどのようにつながっているのか。\n\n前編をご覧いただいた方はもちろん、\n「縄結いの世界が気になる」という方にもぜひ観ていただきたい後編です。",
+      "legacyIndex": 4,
+      "date": "2026.8.9",
+      "status": "published",
+      "videoUrl": "https://m.youtube.com/watch?v=IrukoEOnPVQ&pp=0gcJCWgCo7VqN5tDiggCQAE%3D&ra=m",
+      "title": "YouTube「角由紀子のヤバイ帝国」 靱トレ協会主宰・加藤師範 出演回の後編が公開されました！",
       "images": [
         "/images/73364111-e681-4c1f-a0bb-e3b41ae2235e.png"
       ],
-      "videoUrl": "https://m.youtube.com/watch?v=IrukoEOnPVQ&pp=0gcJCWgCo7VqN5tDiggCQAE%3D&ra=m",
-      "id": "notice-005",
-      "legacyIndex": 4,
-      "status": "published"
+      "tag": "動画公開",
+      "id": "notice-005"
     },
     {
       "important": false,
-      "tag": "緊急告知",
-      "date": "2026.7.29",
-      "title": "YouTube「市村よしなり。」に靭トレ・加藤師範が出演いたしました。",
       "body": "　",
-      "images": [
-        "/images/50998aee-e2bf-4775-9af7-ee14bf64b162.png"
-      ],
       "blocks": [
         {
           "color": "navy",
@@ -373,10 +367,16 @@
           "image": "/images/img_8457.jpeg"
         }
       ],
-      "videoUrl": "https://youtu.be/QLXtVP4SXvE?si=p4hP4VgrkTDpXh3j",
-      "id": "notice-006",
       "legacyIndex": 5,
-      "status": "published"
+      "date": "2026.7.29",
+      "status": "published",
+      "videoUrl": "https://youtu.be/QLXtVP4SXvE?si=p4hP4VgrkTDpXh3j",
+      "title": "YouTube「市村よしなり。」に靭トレ・加藤師範が出演いたしました。",
+      "images": [
+        "/images/50998aee-e2bf-4775-9af7-ee14bf64b162.png"
+      ],
+      "tag": "緊急告知",
+      "id": "notice-006"
     },
     {
       "important": true,
@@ -395,30 +395,30 @@
           "text": "■ 驚異の熱量\nピッチに立つ直前まで「靭トレ」\nプロの極限の世界で戦う中島選手は、\n今、誰よりも「靭トレ」の可能性を信じています。\n\n\n・週3回の継続的なトレーニング\n　多忙なシーズン中も欠かさず実施。\n\n\n・試合当日の朝6時から施術\n　試合前日はもちろん、当日の早朝から身体を整え、その足でスタジアムへ向かうという圧倒的な信頼を寄せています。\n\n\n「なぜ、そこまで『靭トレ』にこだわるのか？」\nその理由は、筋肉の限界を超えた「靭帯発動」\nによる超意識ムーブにあります。\n\n\n■ メディアも絶賛！「相手を置き去りにする」華麗なターン\n最新の試合で見せた、あの「マジうまい」と話題のターン。\n相手を翻弄し、チャンスを演出する軽やかな動きの裏側には、「靭トレ」による身体操作の進化がありました。 "
         }
       ],
+      "legacyIndex": 6,
       "date": "",
       "url": "https://x.com/jintore2727/status/2016762766775009535?s=61&t=4QkL8xkAUQNRjtQGUddYyQ",
+      "status": "published",
       "videoUrl": "https://www.youtube.com/watch?v=3abtbI0qMZ4",
       "title": "■ 月刊秘伝　特別対談動画 天才ドリブラーが語る 「靭トレ」の必要性",
       "images": [
         "/images/img_8398.jpeg"
       ],
       "tag": "中島翔哉×靭トレ",
-      "id": "notice-007",
-      "legacyIndex": 6,
-      "status": "published"
+      "id": "notice-007"
     },
     {
       "important": true,
-      "tag": "お知らせ",
-      "title": "指導体制について",
       "body": "直接指導は今年の7月までと明記し、ご心配をお掛け致しましたが、今しばらくはこの限りではありません。今後、新しい企画等で指導体制が変わる可能性もございますが、今はその時まで、全力で皆様と向き合い、ご指導させていただきます。",
-      "image": "",
+      "legacyIndex": 7,
+      "status": "published",
+      "title": "指導体制について",
       "images": [
         "/images/ce49ec0e-9a82-4857-9264-9cf035ad0439.png"
       ],
+      "tag": "お知らせ",
       "id": "notice-008",
-      "legacyIndex": 7,
-      "status": "published"
+      "image": ""
     },
     {
       "important": true,
